@@ -27,8 +27,8 @@ main,
 footer {
     /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    max-width: 100%;
-    */
+    max-width: 100%;  
+    
 }
 
 
@@ -145,6 +145,8 @@ article p.town-article img, img {
     width: 100%;
     /* fill the page in the small/phone view */
     margin: auto;
+    overflow: auto;
+  
 
 
 }

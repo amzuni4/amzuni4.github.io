@@ -6,7 +6,7 @@
     /* hamburger button does not need to be shown */
     section.forecast {
         display: table;
-        
+
     }
     /* show the 10-day forecast with the medium view and up */
     article p.town-article img {
@@ -31,9 +31,9 @@
         width: 100%;
         height: 100%;
         margin: 20pt;
-        image-rendering: crisp-edges
+        overflow: auto;
     }
-    #meadow{
+    #meadow {
         width: 100%;
     }
     main h2,
@@ -60,15 +60,12 @@
         font-family: 'Myriad Apple';
         font-weight: normal;
         font-size: 18px;
-        color: 006E52;
+        color: #006E52;
         background-color: #FFFAF6;
     }
 
 
     nav {
-
-
-        padding: 60x;
         background: #247863;
 
     }
@@ -132,7 +129,7 @@
         z-index: 10;
         width: 82px;
         height: 82px;
-        image-rendering: crisp-edges;
+        overflow: auto;
     }
 
     table,
@@ -145,31 +142,29 @@
         font-size: 12px;
         color: #006E52;
     }
-      .town-article {
+    .town-article {
         width: 720px;
         height: 590px;
         border: 2px solid #006E52;
         padding: 3px;
         margin: 25px;
         font-family: 'Myriad Apple', sans-serif;
-        font-size:15px;
-    
+        font-size: 15px;
+
     }
 
-    footer {
+   footer {
 
-        background-color: #247863;
+    background-color: #247863;
+}
 
-        ;
+footer aside, footer > p {
+
+
+    background-color: #247863;
+    font-family: 'Myriad Apple', sans-serif;
+    color: #E0E6E8;
+    font-size: 12px;
     }
 
-    footer aside {}
-
-    footer aside,
-    footer > p {
-
-
-        background-color: #247863;
-        font-family: 'Myriad Apple', sans-serif;
-        color: #E0E6E8;
-        font-size: 12px
+}
