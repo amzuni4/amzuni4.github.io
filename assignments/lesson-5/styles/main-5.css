@@ -17,18 +17,15 @@ body {
 }
 
 section.forecast {
-        display: none;
-    }
+    display: none;
+}
 
 
 header,
 nav,
 main,
 footer {
-    /* the comma means apply the following CSS declarations to all of the listed elements */
-    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    max-width: 100%;  
-    
+    max-width: 100%;
 }
 
 
@@ -44,8 +41,6 @@ header h1 {
     line-height: 2em;
     color: #274262;
 }
-
-
 
 header .subheading {
 
@@ -124,7 +119,7 @@ main figure {
 
 
 
-.current{
+.current {
     width: 30%;
     align-content: center;
 }
@@ -140,28 +135,29 @@ main figure {
 }
 
 
-article p.town-article img, img {
+article p.town-article img,
+img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 100%;
     /* fill the page in the small/phone view */
     margin: auto;
     overflow: auto;
-  
+
 
 
 }
 
-    .town-article{
-width: 100%;
-height: auto;
-border: 2px solid #006E52;
-padding: 2px;
-margin: 10px;
-        background-color: #F0F4FA;
-        font-family: 'Myraid Apple', sans-serif;
-        font-size: 15px;
-        color:#274262;
-    }
+.town-article {
+    width: 100%;
+    height: auto;
+    border: 2px solid #006E52;
+    padding: 2px;
+    margin: 10px;
+    background-color: #F0F4FA;
+    font-family: 'Myraid Apple', sans-serif;
+    font-size: 15px;
+    color: #274262;
+}
 
 
 footer {
@@ -169,7 +165,8 @@ footer {
     background-color: #247863;
 }
 
-footer aside, footer > p {
+footer aside,
+footer > p {
 
 
     background-color: #247863;
@@ -178,6 +175,7 @@ footer aside, footer > p {
     font-size: 12px;
 
 }
+
 
 
 /* This structure refers to p elements that are direct children of the footer element */
