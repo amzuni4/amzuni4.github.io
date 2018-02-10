@@ -1,0 +1,147 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    article p.town-article img {
+        width: 55%;
+    }
+
+
+    .town-article {
+        width: 960px;
+        height: 400px;
+        border: 2px solid #006E52;
+        padding: 5px;
+        margin: 25px;
+        font-family: 'Myriad Apple', sans-serif;
+        font-size: 20px;
+    }
+
+
+
+
+    header .subheading {
+
+        margin-bottom: 4px;
+        margin-top: 5px;
+        font-family: 'Myriad Apple';
+        font-weight: normal;
+        font-size: 20px;
+        color: 006E52;
+        background-color: #FFFAF6;
+    }
+
+    main h2,
+    h3 {
+        text-align-last: left;
+        font-size: 2em;
+
+    }
+
+    header h1,
+    h2,
+    h3 {
+        font-family: 'Bembo Book MT Pro', serif;
+        padding: 1.4px;
+        font-size: 2em;
+        line-height: 1.5em;
+        color: #274262;
+    }
+
+        nav {
+
+
+            padding: 60x;
+            background: #247863;
+
+        }
+
+        nav button {}
+
+        nav ul {
+
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Myriad Apple';
+            font-size: 14px;
+        }
+
+        nav ul li {
+            float: left;
+            border-right: 1px solid #F0F4FA;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+        nav ul li a {
+
+            display: block;
+            color: #E0E6E8;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: 'Myriad Apple';
+            font-size: 18px;
+        }
+
+        nav ul li.active a {
+            color: #ffffff;
+        }
+
+        nav ul li a:hover {
+            color: #FFD3B9;
+        }
+
+        section {
+            display: contents;
+   
+}
+   
+
+
+
+        header img {
+            max-width: 255px;
+            max-height: 300px;
+            border-radius: 5px;
+            background-color: transparent;
+            /*adds 3d effect to images*/
+        }
+
+        #logo {
+
+            position: absolute;
+            top: -12pt;
+            left: 260pt;
+            z-index: 10;
+            width: 83px;
+            height: 83px;
+
+        }
+ 
+        table,
+        th,
+        td {
+            border: 2px solid #006E52;
+            background-color: #E0E6E8;
+            padding: 18px;
+            font-family: 'Myriad Apple', sans-serif;
+            font-size: 50px;
+            color: #006E52;
+        }
+
+
+
+        footer {
+
+            background-color: #247863;
+        }
+        footer aside,
+        footer > p {
+
+
+            background-color: #247863;
+            font-family: 'Myriad Apple', sans-serif;
+            color: #E0E6E8;
+            font-size: 12px
