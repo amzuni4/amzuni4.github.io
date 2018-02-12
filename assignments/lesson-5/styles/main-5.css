@@ -35,7 +35,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Bembo Book MT Pro', serif;
+    font-family: 'font-family: 'Abril Fatface', cursive;
     padding: 1.4px;
     font-size: 1.5em;
     line-height: 2em;
@@ -98,7 +98,7 @@ nav ul li a:hover {
 
 main {
 
-    font-family: 'Bembo Book MT Pro', serif;
+    font-family: 'font-family: 'Abril Fatface', cursive;
     padding: 10px;
     font-size: 1.5em;
     line-height: 1.5em;
