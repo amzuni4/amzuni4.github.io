@@ -25,7 +25,6 @@
         font-size: 14px;
     }
 
-
     /* responsive images */
     img {
         width: 100%;
@@ -64,10 +63,8 @@
         background-color: #FFFAF6;
     }
 
-
     nav {
         background: #247863;
-
     }
 
     nav button {}
@@ -153,18 +150,19 @@
 
     }
 
-   footer {
+    footer {
 
-    background-color: #247863;
-}
+        background-color: #247863;
+    }
 
-footer aside, footer > p {
+    footer aside,
+    footer > p {
 
 
-    background-color: #247863;
-    font-family: 'Myriad Apple', sans-serif;
-    color: #E0E6E8;
-    font-size: 12px;
+        background-color: #247863;
+        font-family: 'Myriad Apple', sans-serif;
+        color: #E0E6E8;
+        font-size: 12px;
     }
 
 }
