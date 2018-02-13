@@ -35,7 +35,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Bembo Book MT Pro', serif;
+    font-family:'Archivo Black', sans-serif; ;
     padding: 1.4px;
     font-size: 1.5em;
     line-height: 2em;
@@ -45,7 +45,7 @@ header h1 {
 header .subheading {
 
     margin-bottom: 1px;
-    font-family: 'Myriad Apple';
+    font-family: 'Myriad Apple', sans-serif;
     font-weight: normal;
     font-size: 12px;
     color: #006E52;
