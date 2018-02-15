@@ -56,7 +56,7 @@
         /* IE6-9 */
     }
     nav button {
-        display: block;
+        display: none;
     }
 
     nav ul {
@@ -73,6 +73,7 @@
     }
     li:last-child {
         border-right: none;
+        
     }
     nav ul li a {
         display: block;
@@ -82,6 +83,7 @@
         text-decoration: none;
         font-family: 'Myriad Apple';
         font-size: 18px;
+        border-bottom: none;
     }
     nav ul li.active a {
         color: #ffffff;
