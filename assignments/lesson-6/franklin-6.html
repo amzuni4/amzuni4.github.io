@@ -10,21 +10,22 @@
     <!-- external style references in the proper cascading order -->
     <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">
     <!-- Google API font reference -->
-    <link href="../lesson-5/styles/normalize.css"  rel="stylesheet">
+    <link href="../lesson-6/styles/normalize.css"  rel="stylesheet">
     <!-- normalize useragent/browser defaults -->
-    <link href="../lesson-5/styles/main-5.css"  rel="stylesheet">
+    <link href="../lesson-6/styles/main-6.css"  rel="stylesheet">
     <!-- default styles - small/phone views -->
-    <link href="../lesson-5/styles/medium-5.css"  rel="stylesheet">
+    <link href="styles/medium-6.css"  rel="stylesheet">
     <!-- medium/tablet views -->
-    <link href="../lesson-5/styles/large-5.css"  rel="stylesheet">
+    <link href="../lesson-6/styles/large-6.css"  rel="stylesheet">
     <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     
 </head>
 
 <body>
 
     <header>
-        <img id="logo" src="../lesson-5/images/logo.png" alt="logo">
+        <img id="logo" src="images/logo.png" alt="logo">
 
         <h1>RealTime Weather Radar</h1>
         <div class="subheading">RealTime Weather Radar, seeks to provide weather and climate data, including weather prediction, and weather warnings for the citizens near or around Franklin, MU.</div>
@@ -33,9 +34,9 @@
 
 
     <!-- site navigation use placeholder references -->
-    <nav>
-        <button onclick="toggleNavMenu()">&#9776;</button>
-        <ul>
+    <nav class="clearfix">
+        <button onclick="navToggle()">&#9776;</button>
+        <ul class="hide" id="primaryNav">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
@@ -48,7 +49,12 @@
     <main>
         <h2>The City of Franklin</h2>
         <figure>
-            <img id="meadow" src="../lesson-5/images/banner.jpg" alt="meadow">
+            <img src="images/franklin-original.jpeg" alt="franklinmeadow" size="50vw"
+                 srcset="images/franklin_small.jpg 200w,
+                         images/franklin_medium.jpg 500w,
+                         images/franklin_small.jpg 800w"
+                 >
+            
         </figure>
         <section>
             <h3>Current Weather</h3>
@@ -59,7 +65,7 @@
             <div class="current">
                 Sunny: 
                 <picture>
-                    <img src="../lesson-5/images/sun.jpg" alt="sun">
+                    <img src="images/sun.jpg" alt="sun">
                 </picture>
             </div>
             <div class="conditions">
@@ -105,7 +111,7 @@
         <article>
             <h3>Cloud Cover won't Dominate Holiday Plans</h3>
             <p class="town-article">
-                <img src="../lesson-5/images/cloudcity.jpeg" alt="cloudy">
+                <img src="images/cloudcity.jpeg" alt="cloudy">
                 The past four weeks of high precepitation has certainly been unwelcome, in certain metropolis areas of Franklin, Mu. 
                 The heavy cloud cover made it dangerous for incoming flights to land, so with the coming president's day weekend, we will hopefully see the clouds receed, which
                 will hopefully bring more tourists into our city. According to fictional writer, and meterologist, Alfred Costs, over at Pearson Reveiw, rejoins, stating that the cloud cover over the past six weeks, 
@@ -122,7 +128,7 @@
         <aside>
             RealTime Weather Radar 123 Main Street Franklin, MU 12345
         </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved | RealTime Weather Radar | <span id="currentdate">02/09/2018</span></p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | RealTime Weather Radar | <span id="getDate"></span></p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>

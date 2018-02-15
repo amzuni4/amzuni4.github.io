@@ -1,0 +1,113 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  
+    font-family: 'Myriad Apple', sans-serif; 
+    font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+
+    
+max-width: 640px;
+max-height: 960px;
+padding:10px;
+font-size: 1.5em;
+line-height: 1.5em
+
+    
+}
+
+header {
+    
+
+}
+header h1 {
+
+font-family: 'Bembo Book MT Pro', serif;
+padding:10px;
+font-size: 1.5em;
+line-height: 1.5em;
+color:#274262;
+}
+header img {
+    
+    max-width: 640px;
+    max-height: 960px;
+    border-radius: 5px; /*adds 3d effect to images*/
+    box-shadow: 5px 5px 5px
+    
+    
+}
+header .subheading {
+
+}
+
+nav {
+    padding: 1em;
+    background: #247863;
+}
+nav button {}
+nav ul {
+    margin: 20px;
+    padding: 2px;
+    font-family: 'Myriad Apple'; 
+}
+nav ul li {
+    list-style:none;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    float: left;
+    display:block;
+    padding: 5px 10px;
+    color:#E0E6E8;
+    
+}
+nav ul li.active a {
+    color: #ffffff;
+}
+nav ul li a:hover {
+    color:#FFD3B9;
+}
+
+main {
+
+}
+main h2 {
+    
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+section {
+    
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width:640px; /* fill the page in the small/phone view */
+  ;
+    margin: 25px;
+    
+
+padding:10px;
+font-size: 1.5em;
+line-height: 1.5em
+}
+
+footer {
+    
+}
+footer aside {
+    
+}
+footer>p {
+    
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
