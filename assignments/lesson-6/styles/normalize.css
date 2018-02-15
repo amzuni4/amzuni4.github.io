@@ -1,4 +1,4 @@
-*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+*/ normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -10,9 +10,9 @@
  */
 
 html {
-  line-height: 1.15; 
-  -ms-text-size-adjust: 100%; 
-  -webkit-text-size-adjust: 100%; 
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
