@@ -94,9 +94,9 @@
     }
     li:last-child {
         border-right: none;
-       ;
+        ;
     }
-    
+
     nav ul li a {
         display: block;
         color: #E0E6E8;
