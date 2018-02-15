@@ -91,7 +91,7 @@ nav ul li {
 }
 
 li:first-child{
-    border-top:1px solid #E0E6E8;;
+    border-top:2px solid #E0E6E8;;
 }
 li:last-child {
     border-bottom: none;
@@ -99,10 +99,10 @@ li:last-child {
 
 nav ul li a {
     display: block;
-    font-size: .08rem; 2%;
+    padding: .8rem 2%;
     text-decoration: none;
     color: #E0E6E8;
-    border-top:1px solid,#E0E6E8;
+    border-top: 1px solid #E0E6E8;
 }
 
 nav ul li.active a {
@@ -121,7 +121,7 @@ main {
     padding: 10px;
     font-size: 1.5em;
     line-height: 1.5em;
-    color: #274262
+    color: #274262;
 }
 
 main h2,
