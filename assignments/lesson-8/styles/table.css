@@ -1,28 +1,32 @@
-html{
-    font-family:'Ubuntu', sans-serif;
-    font-weight:600;
-}
-table {
-  border-collapse: collapse;
-  border: 1px solid rgb(200,200,200);
-  
+html {
+    font-family: 'Ubuntu', sans-serif;
 }
 
-header {
-    display: table;
-    width: 500px;
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    box-shadow: 5px 5px 7px .8px #628ca6;
+    font-weight: 600;
+    width: 39%;
+    height: 50%;
+}
+
+#header {
     text-align: center;
-    font-size: 12px;
+    font-size: 30px;
+    font-stretch: expanded;
+    font-weight:900;
     color: black;
     background-color: #7fb9c2;
-   border: 1px solid rgb(190, 190, 190);
-    font-weight: bold;
-
+    border: 1.8px solid rgb(190, 190, 190);
 }
 
 th {
-    border: 1px solid rgb(190, 190, 190);
-    padding: 12px 58px;
+    border: 2px solid rgb(190, 190, 190);
+    text-align:center;
+    padding-top: 9px;
+    padding-bottom: 9.5px;
+    letter-spacing: .5px;
 
 }
 
@@ -30,32 +34,49 @@ th {
     color: white;
     font-weight: bold;
     background-color: #628ca6;
-    font-size: 12px;
-    font-weight: bold;
-    
+    font-size: 18px;
+    text-align: center;
 }
 
 td {
-   border: 2px solid rgb(190, 190, 190);
- padding: 3px 38px;
-
-
-}
-tr, td{
-    background-color:  #e7f0ed;
-
-    
+    border: 2px solid rgb(190, 190, 190);
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    font-weight:bold;
+    font-size:16px;
+    letter-spacing: .5px;
 }
 
-    
-    #e7ffed (data rows) and #628ca6, #7fb9c2 with white and black.
-
+tr,
+td {
+    background-color: #e7f0ed;
 }
 
 tr:nth-child(even) td {
-  background-color:#e7f0ed;
+    
+     background-color: #e7ffed;
 }
 
 tr:nth-child(odd) td {
-  background-color:#e7ffed;
+    background-color: #e7f0ed;
+    
+}
+
+tr: td {
+    background-color: aqua;
+}
+#italic{
+    font-style: italic;
+}
+#special {
+    background-color: #628ca6;
+    color: white;
+}
+
+#last {
+    background-color: #7fb9c2;
+    font-weight: bold;
+    padding: 9px;
+    font-size: 14px;
 }
