@@ -15,7 +15,7 @@ table {
     text-align: center;
     font-size: 30px;
     font-stretch: expanded;
-    font-weight:900;
+    font-weight: bolder;
     color: black;
     background-color: #7fb9c2;
     border: 1.8px solid rgb(190, 190, 190);
@@ -23,7 +23,7 @@ table {
 
 th {
     border: 2px solid rgb(190, 190, 190);
-    text-align:center;
+    text-align: center;
     padding-top: 9px;
     padding-bottom: 9.5px;
     letter-spacing: .5px;
@@ -43,8 +43,8 @@ td {
     text-align: center;
     padding-top: 12px;
     padding-bottom: 7px;
-    font-weight:bold;
-    font-size:16px;
+    font-weight: bold;
+    font-size: 16px;
     letter-spacing: .5px;
 }
 
@@ -54,21 +54,20 @@ td {
 }
 
 tr:nth-child(even) td {
-    
-     background-color: #e7ffed;
+
+    background-color: #e7ffed;
 }
 
 tr:nth-child(odd) td {
     background-color: #e7f0ed;
-    
+
 }
 
-tr: td {
-    background-color: aqua;
-}
-#italic{
+
+#italic {
     font-style: italic;
 }
+
 #special {
     background-color: #628ca6;
     color: white;
