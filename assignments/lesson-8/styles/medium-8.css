@@ -173,11 +173,14 @@
     table,
     th,
     td {
-        border: 2px solid #006E52;
+        border: 3px solid #006E52;
         background-color: #E0E6E8;
-        padding: 12px;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        padding-left: 15px;
+        padding-right: 15px;
         font-family: 'Myriad Apple', sans-serif;
-        font-size: 12px;
+        font-size: 15px;
         color: #006E52;
     }
 
@@ -193,5 +196,15 @@
         color: #E0E6E8;
         font-size: 12px;
     }
+#thanks{
+    font-size:5rem;
+    font-weight: 900;
+    
+}
+#report{
+font-size: 3rem;
+    color:black;
+    letter-spacing: 1px;
 
+}
 }

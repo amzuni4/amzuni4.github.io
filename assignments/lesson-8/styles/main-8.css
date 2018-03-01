@@ -287,6 +287,16 @@ label{
     margin:.5em;
     
 }
+
+#thanks{
+    font-size:26px;
+    font-weight: 900;
+    
+}
+#report{
+font-size: 14px;
+color:black;
+}
 /* This structure refers to p elements that are direct children of the footer element */
 
 

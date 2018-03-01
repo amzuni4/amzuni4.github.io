@@ -120,12 +120,18 @@
     table,
     th,
     td {
-        border: 2px solid #006E52;
+        border: 3px solid #006E52;
         background-color: #E0E6E8;
-        padding: 18px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+        padding-left: 25px;
+        padding-right: 25px;
         font-family: 'Myriad Apple', sans-serif;
-        font-size: 50px;
+        font-size: 30px;
         color: #006E52;
+       
+    } 
+        
     }
     footer {
 
