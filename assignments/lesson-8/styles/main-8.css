@@ -267,13 +267,13 @@ footer > p {
 }
 #General Info{
     background-color:green;
-    border-radius: #DFE8E7;
+    color: #DFE8E7;
 }
 
 fieldset{
     background-color: #E0E6E8;
     border-radius: .8em;
-    margin 1.5em 0;
+    margin: 1.5em 0;
     border:white solid 2px;
 }
 
@@ -299,8 +299,4 @@ font-size: 14px;
 color:black;
 }
 /* This structure refers to p elements that are direct children of the footer element */
-
-
-
-
 /* Other Class Selectors */
