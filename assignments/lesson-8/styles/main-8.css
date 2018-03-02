@@ -258,11 +258,12 @@ footer > p {
 #calltoaction{
     
     box-sizing: border-box;
-    background-color: #274262;
+    background-color: #628ca6;
     font-family: 'Myriad Apple', sans-serif;
     color:#fff;
     margin:2px;
     padding: 12px;
+    font-size: 18px;
 }
 #General Info{
     background-color:green;

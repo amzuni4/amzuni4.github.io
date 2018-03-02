@@ -39,7 +39,7 @@
     <nav class="clearfix">
         <button onclick="navToggle()">&#9776;</button>
         <ul class="hide" id="primaryNav">
-            <li><a href="#">Home</a></li>
+            <li><a href="../">Home</a></li>
             <li class="active"><a href="/franklin-8.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
@@ -48,19 +48,19 @@
         </ul>
     </nav>
 
-    <p id="calltoaction">You can be apart of RealTime Weather Radar by filling out our forms below!</p>
+    <p id="calltoaction"> Fill out our form below!</p>
 
 <form>
     <fieldset>
 
         <legend>
             <span>General Information</span> </legend>
-        <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z-._ ]{5,99}" required></label>
-        <label><span>Email Address: </span><input name="email" type="email" value="" placeholder="yogi@gmail.com" required></label>
-        <label><span>Phone Number: </span><input name="phone" type="tel" value="" placeholder="1234567890" pattern="[0-9]{10,20}" required></label>
-        <label><span>Zip Code: </span><input name="zip code" type="number" value="" placeholder="12345" pattern="[0-9][5,5]" required>
+        <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z-._ ]{5,99}"></label>
+        <label><span>Email Address: </span><input name="email" type="email" value="" placeholder="yogi@gmail.com" ></label>
+        <label><span>Phone Number: </span><input name="phone" type="tel" value="" placeholder="1234567890" pattern="[0-9]{10,20}"></label>
+        <label><span>Zip Code: </span><input name="zip code" type="number" value="" placeholder="12345" pattern="[0-9][5,5]">
             </label>
-        <label><span>Storm Date: </span><input name="date" type="date" value="" placeholder="mm/dd/yr" pattern="[1-12]{1970-2018}" required></label>
+        <label><span>Storm Date: </span><input name="date" type="date" value="" min="01" max="2050"  placeholder="mm/dd/yr" pattern="[1-12]{1970-2018}"></label>
     </fieldset>
 
     <fieldset>
@@ -100,11 +100,11 @@
     </fieldset>
     <fieldset>
         <textarea name="message" rows="10" cols="30">Additional Comments Here.</textarea>
-       <div id="submitbutton">
-        <input type="submit">
-           </div>
+        
+        
     </fieldset>
+  <button type="submit" formaction="thanks.html">Submit</button>
+    </form>
+    </body>
 
-
-</form>
-</div>
+</html>
