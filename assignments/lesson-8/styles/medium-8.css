@@ -156,18 +156,18 @@
         grid-template-columns: repeat(2, 49%);
         grid-gap: 2%;
     }
-    div.weatherGallery img{
+    div.weatherGallery img {
         width: 100%;
         margin-top: -.5px;
-        
+
     }
-    div.weatherGallery figure{
-        display:flex;
+    div.weatherGallery figure {
+        display: flex;
         align-items: center;
-        width:100%;
+        width: 100%;
         flex-direction: column;
         align-content: flex-end;
-        
+
     }
 
     table,
@@ -196,15 +196,15 @@
         color: #E0E6E8;
         font-size: 12px;
     }
-#thanks{
-    font-size:5rem;
-    font-weight: 900;
-    
-}
-#report{
-font-size: 3rem;
-    color:black;
-    letter-spacing: 1px;
+    #thanks {
+        font-size: 5rem;
+        font-weight: 900;
 
-}
+    }
+    #report {
+        font-size: 3rem;
+        color: black;
+        letter-spacing: 1px;
+
+    }
 }

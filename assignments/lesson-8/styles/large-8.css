@@ -129,53 +129,59 @@
         font-family: 'Myriad Apple', sans-serif;
         font-size: 30px;
         color: #006E52;
-       
-    } 
-        
-    }
-    footer {
-
-        background-color: #247863;
-    }
-    footer aside,
-    footer > p {
-
-
-        background-color: #247863;
-        font-family: 'Myriad Apple', sans-serif;
-        color: #E0E6E8;
-        font-size: 12px
-    }
-    #container {
-        margin: 12px auto;
-        border: 8px dashed #247863;
-        border-right: 12px;
-        border-left: 12px;
-    }
-    div.weatherGallery img {
-        width: 100%;
-        height: 100%;
-        justify-content: flex-start;
-        background-color: #E0E6E8;
-        margin-top: -.5px;
-
 
     }
 
-    div.weatherGallery {
+}
 
-        grid-template-columns: repeat(3, 32%);
-        border: 12px;
-    }
-    div.weatherGallery figure {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        flex-direction: column;
-        align-content: flex-end;
-        margin-bottom: 2%;
+footer {
 
-    }
-    div.weatherGallery figure:hover {
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-    }
+    background-color: #247863;
+}
+
+footer aside,
+footer > p {
+
+
+    background-color: #247863;
+    font-family: 'Myriad Apple', sans-serif;
+    color: #E0E6E8;
+    font-size: 12px
+}
+
+#container {
+    margin: 12px auto;
+    border: 8px dashed #247863;
+    border-right: 12px;
+    border-left: 12px;
+}
+
+div.weatherGallery img {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    background-color: #E0E6E8;
+    margin-top: -.5px;
+
+
+}
+
+div.weatherGallery {
+
+    grid-template-columns: repeat(3, 32%);
+    border: 12px;
+}
+
+div.weatherGallery figure {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    align-content: flex-end;
+    margin-bottom: 2%;
+
+}
+
+div.weatherGallery figure:hover {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}

@@ -25,6 +25,7 @@
 
 
 </head>
+
 <body>
 
     <header>
@@ -40,32 +41,32 @@
         <button onclick="navToggle()">&#9776;</button>
         <ul class="hide" id="primaryNav">
             <li><a href="../">Home</a></li>
-            <li class="active"><a href="/franklin-8.html">Franklin</a></li>
+            <li class="active"><a href="../lesson-8/franklin-8.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
-            <li><a href="/stormcenter.html">Storm Center</a></li>
-            <li><a href="/gallery-8.html">Gallery</a></li>
+            <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson-8/gallery-8.html">Gallery</a></li>
         </ul>
     </nav>
 
     <p id="calltoaction"> Fill out our form below!</p>
 
-<form>
-    <fieldset>
+    <form>
+        <fieldset>
 
-        <legend>
-            <span>General Information</span> </legend>
-        <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z-._ ]{5,99}" required></label>
-        <label><span>Email Address: </span><input name="email" type="email" value="" placeholder="yogi@gmail.com" required ></label>
-        <label><span>Phone Number: </span><input name="phone" type="tel" value="" placeholder="1234567890" pattern="[0-9]{10,20}" required></label>
-        <label><span>Zip Code: </span><input name="zip code" type="number" value="" placeholder="12345" pattern="[0-9][5,5]" required>
+            <legend>
+                <span>General Information</span> </legend>
+            <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z-._ ]{5,99}" ></label>
+            <label><span>Email Address: </span><input name="email" type="email" value="" placeholder="yogi@gmail.com"  ></label>
+            <label><span>Phone Number: </span><input name="phone" type="tel" value="" placeholder="1234567890" pattern="[0-9]{10,20}" ></label>
+            <label><span>Zip Code: </span><input name="zip code" type="number" value="" placeholder="12345" >
             </label>
-        <label><span>Storm Date: </span><input name="date" type="date" value="" min="01" max="2050"  placeholder="mm/dd/yr" pattern="[1-12]{1970-2018}" required></label>
-    </fieldset>
+            <label><span>Storm Date: </span><input name="date" type="date" value=""></label>
+        </fieldset>
 
-    <fieldset>
-        <legend><span>Storm Type</span></legend>
-        <label><span>Storm Type: </span>
+        <fieldset>
+            <legend><span>Storm Type</span></legend>
+            <label><span>Storm Type: </span>
                 <input type="text" input name="Storm Type" list="storms"><datalist id="storms">
                 <option value="Flash Flood"></option>
                 <option value="Hail"></option>
@@ -74,36 +75,38 @@
                 <option value="Tornado"></option>
                 </datalist>
                 <label for="rating">Rating (1 to 10)</label>
-        <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-        <span id="ratingvalue">10</span><br>
+            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <span id="ratingvalue">10</span><br>
 
 
-        </label>
-    </fieldset>
+            </label>
+        </fieldset>
 
-    <fieldset><legend><span>Storm Region</span></legend>
-       
-        <select name="regions">
+        <fieldset>
+            <legend><span>Storm Region</span></legend>
+
+            <select name="regions">
              <option value="Select Region">Select Region</option>
     <option value="Franklin">Franklin</option>
     <option value="Greenville">Greenville</option>
     <option value="Springville">Springville</option>
   </select>
-    </fieldset>
-    <fieldset><legend><span>Danger Level</span></legend>
-        <label><span>User In-Danger Level:</span></label>
-        <br>
-        <input type="radio" name="Danger Level" value="Yes" checked> Yes
-        <input type="radio" name="Danger Level" value="Maybe">Maybe
-        <input type="radio" name="Danger Level" value="No"> No
-    </fieldset>
-    <fieldset>
-        <textarea name="message" rows="10" cols="30">Additional Comments Here.</textarea>
-        
-        
-    </fieldset>
-  <button type="submit" formaction="thanks.html">Submit</button>
+        </fieldset>
+        <fieldset>
+            <legend><span>Danger Level</span></legend>
+            <label><span>User In-Danger Level:</span></label>
+            <br>
+            <input type="radio" name="Danger Level" value="Yes" checked> Yes
+            <input type="radio" name="Danger Level" value="Maybe">Maybe
+            <input type="radio" name="Danger Level" value="No"> No
+        </fieldset>
+        <fieldset>
+            <textarea name="message" rows="10" cols="30">Additional Comments Here.</textarea>
+
+
+        </fieldset>
+        <button type="submit" formaction="thanks.html">Submit</button>
     </form>
-    </body>
+</body>
 
 </html>

@@ -35,7 +35,7 @@ footer {
 
 header {
     background-color: #F0F4FA;
-  
+
 
 }
 
@@ -255,48 +255,53 @@ footer > p {
 
 }
 
-#calltoaction{
-    
+#calltoaction {
+
     box-sizing: border-box;
     background-color: #628ca6;
     font-family: 'Myriad Apple', sans-serif;
-    color:#fff;
-    margin:2px;
+    color: #fff;
+    margin: 2px;
     padding: 12px;
     font-size: 18px;
 }
-#General Info{
-    background-color:green;
+
+#General Info {
+    background-color: green;
     color: #DFE8E7;
 }
 
-fieldset{
+fieldset {
     background-color: #E0E6E8;
     border-radius: .8em;
     margin: 1.5em 0;
-    border:white solid 2px;
+    border: white solid 2px;
 }
 
-legend{
-    color:#247863;
+legend {
+    color: #247863;
     font-family: 'Bembo Book MT Pro', serif;
     font-size: 24px;
-    
-}
-label{
-    display:block;
-    margin:.5em;
-    
+
 }
 
-#thanks{
-    font-size:26px;
+label {
+    display: block;
+    margin: .5em;
+
+}
+
+#thanks {
+    font-size: 26px;
     font-weight: 900;
-    
+
 }
-#report{
-font-size: 14px;
-color:black;
+
+#report {
+    font-size: 14px;
+    color: black;
 }
+
 /* This structure refers to p elements that are direct children of the footer element */
+
 /* Other Class Selectors */
