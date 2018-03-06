@@ -1,0 +1,90 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    box-shadow: 5px 5px 7px .8px #628ca6;
+    font-weight: 600;
+    width: 39%;
+    height: 50%;
+}
+
+#header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    background-color: #7fb9c2;
+    border: 1.8px solid rgb(190, 190, 190);
+    font-family: 'Ubuntu', sans-serif;
+        
+
+}
+
+th {
+    border: 2px solid rgb(190, 190, 190);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 0px;
+
+}
+
+th {
+    color: white;
+    font-weight: bold;
+    background-color: #628ca6;
+    font-size: 14px;
+    text-align: center;
+}
+
+td {
+    border: 2px solid rgb(190, 190, 190);
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: .5px;
+    color:black;
+}
+
+tr,
+td {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(even) td {
+
+    background-color: #e7ffed;
+}
+
+tr:nth-child(odd) td {
+    background-color: #e7f0ed;
+
+}
+
+
+#italic {
+    font-style: italic;
+}
+
+#special {
+    background-color: #628ca6;
+    color: white;
+}
+
+#last {
+    background-color: #7fb9c2;
+    font-weight: bold;
+    font-size: 11px;
+    color:black;
+    padding-top:1px;
+    padding-bottom: 1px;
+}
