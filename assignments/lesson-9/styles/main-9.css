@@ -302,6 +302,26 @@ label {
     color: black;
 }
 
+
+#place,#currentTemp,#weathObs,#windMPH, #forecast{
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+
+#weather_icon {
+    display: flex;
+    width: 30%;
+}
+
+
+
+
+
+
+
+
 /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
