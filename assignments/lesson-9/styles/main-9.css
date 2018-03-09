@@ -303,8 +303,8 @@ label {
 }
 
 
-#place,#currentTemp,#weathObs,#windMPH, #forecast, #f{
-    display: flex;
+#place,#currentTemp,#weathObs,#windMPH, #forecast{
+    display: inline-block;
     font-weight: bold;
 }
 
@@ -316,7 +316,9 @@ label {
 }
 
 
-
+#weatherContainer p{
+    font-weight: bold;
+}
 
 
 
