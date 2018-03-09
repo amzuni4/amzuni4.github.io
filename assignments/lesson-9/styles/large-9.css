@@ -174,11 +174,3 @@
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     }
 }
-
-#json{
-    display: inline-flex;
-    align-content: center;
-    padding: 50px;
-   break-after: avoid-column;
-    flex-direction: row;    
-}
