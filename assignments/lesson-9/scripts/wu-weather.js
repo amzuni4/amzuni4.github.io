@@ -11,7 +11,9 @@ weatherObject.onload = function(){
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.full;
      document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
     document.getElementById('weathObs').innerHTML = weatherInfo.current_observation.weather;
-    document.getElementById('weather_icon').src = weatherInfo.current_observation.icon_url;
+     document.getElementById('weather_icon').src = weatherInfo.current_observation.icon_url;
+    
+   
     document.getElementById('windMPH').innerHTML = weatherInfo.current_observation.wind_mph;
     document.getElementById('forecast').innerHTML = weatherInfo.current_observation.feelslike_string;
     
