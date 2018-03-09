@@ -207,4 +207,11 @@
         letter-spacing: 1px;
 
     }
+    #json {
+        display: inline-block;
+        padding: 8px;
+       
+
+
+    }
 }

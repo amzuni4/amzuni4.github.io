@@ -3,20 +3,34 @@ weatherObject.open('GET', 'http://api.wunderground.com/api/9d9d50d9dae82d0f/cond
 
 weatherObject.send();
 
-weatherObject.onload = function(){
-    
+weatherObject.onload = function () {
+
     var weatherInfo = JSON.parse(weatherObject.responseText);
 
-   console.log(weatherInfo);
+    console.log(weatherInfo);
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.full;
-     document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
+    document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
     document.getElementById('weathObs').innerHTML = weatherInfo.current_observation.weather;
-     document.getElementById('weather_icon').src = weatherInfo.current_observation.icon_url;
-    
-   
+    document.getElementById('weather_icon').src = weatherInfo.current_observation.icon_url;
+
+
     document.getElementById('windMPH').innerHTML = weatherInfo.current_observation.wind_mph;
     document.getElementById('forecast').innerHTML = weatherInfo.current_observation.feelslike_string;
-    
-    
-   
+
+
+
+}
+var weatherForecast = new XMLHttpRequest();
+weatherForecast.open('GET', 'http://api.wunderground.com/api/9d9d50d9dae82d0f/forecast/q/MN/Franklin.json', true);
+
+weatherForecast.send();
+
+weatherForecast.onload = function () {
+
+    var weatherPredict = JSON.parse(weatherForecast.responseText);
+
+    console.log(weatherPredict);
+    document.getElementById('tenForecast').innerHTML = weatherPredict.forecast.simpleforecast;
+
+
 }
