@@ -22,16 +22,4 @@ weatherObject.onload = function () {
 }
 
 
-var txtForecast = new XMLHttpRequest()
 
-txtForecast.open('GET','http://api.wunderground.com/api/9d9d50d9dae82d0f/forecast10day/q/MN/Franklin.json', true);
-
-txtForecast.send();
-
-txtForecast.onload = function() {
-    var weatherText = JSON.parse(txtForecast.responseText);
-    console.log(weatherText);
-
-    document.getElementById('hi').innerHTML = weatherText.forecast.txt_forecast.forecastday["0"].fcttext;
-
-}
