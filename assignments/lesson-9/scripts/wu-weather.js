@@ -31,7 +31,7 @@ txtForecast.onload = function() {
     var weatherText = JSON.parse(txtForecast.responseText);
     console.log(weatherText);
 
-    document.getElementById('hi').innerHTML = weatherText.forecast.txt_forecast.forecastday["0"].;
+    document.getElementById('hi').innerHTML = weatherText.forecast.txt_forecast.forecastday["0"].fcttext;
 
 }
 
