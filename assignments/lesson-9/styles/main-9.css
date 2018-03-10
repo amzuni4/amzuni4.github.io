@@ -303,16 +303,7 @@ label {
 }
 
 
-#place,
-#currentTemp,
-#weathObs,
-#windMPH,
-#forecast {
-    display: inline-block;
-    font-weight: bold;
 
-
-}
 
 
 
@@ -328,15 +319,7 @@ label {
 }
 
 
-section {
 
-    margin: 90px;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-
-}
 
 /* This structure refers to p elements that are direct children of the footer element */
 
