@@ -175,15 +175,15 @@
     }
 
     section {
-       
-      display: flex;
-        flex-direction:row;
-      padding-right: 120px;
+
+        display: flex;
+        flex-direction: row;
+        padding-right: 120px;
         padding-left: 250px;
         text-align: center;
-        
-        
-       
+
+
+
 
 
     }
