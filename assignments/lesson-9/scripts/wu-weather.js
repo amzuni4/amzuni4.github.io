@@ -37,4 +37,3 @@ textForecast.onload = function(){
     
 
 }
-hellow
