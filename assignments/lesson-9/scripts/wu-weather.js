@@ -22,16 +22,16 @@ weatherObject.onload = function () {
 }
 
 
-var textForecast = new XMLHttpRequest();
-textForecast.open('GET', 'http://api.wunderground.com/api/9d9d50d9dae82d0f/forecast10day/q/MN/Franklin.json', true);
+var txtForecast = new XMLHttpRequest()
 
-textForecast.send();
+txtForecast.open('GET','http://api.wunderground.com/api/5cc13ffc94a61b9c/forecast/q/MN/Franklin.json', true);
 
-textForecast.onload = function(){
-    
-    var tenDays = JSON.parse(textForecast.responseText);
+txtForecast.send();
 
-   console.log(tenDays);
- 
-    document.getElementById('hi').innerHTML = tenDays.forecast.txt_forecast.forecastday["0"].fcttext;
+txtForecast.onload = function() {
+    var weatherText = JSON.parse(txtForecast.responseText);
+    console.log(weatherText);
+
+    document.getElementById('hi').innerHTML = weatherText.forecast.txt_forecast.forecastday["0"].fcttext;
+
 }
