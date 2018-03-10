@@ -207,11 +207,6 @@
         letter-spacing: 1px;
 
     }
-    section{
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 10px;
-        
-    }
+  
     
 }
