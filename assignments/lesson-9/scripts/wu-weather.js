@@ -34,6 +34,4 @@ textForecast.onload = function(){
    console.log(tenDays);
  
     document.getElementById('hi').innerHTML = tenDays.forecast.txt_forecast.forecastday["0"].fcttext;
-    
-
 }
