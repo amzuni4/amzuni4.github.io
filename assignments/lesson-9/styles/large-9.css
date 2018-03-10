@@ -173,10 +173,6 @@
     div.weatherGallery figure:hover {
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     }
-  section{
-       display: flex-end;
-      ;
-        
-    }
+
 }
 
