@@ -306,11 +306,10 @@ label {
 #place,#currentTemp,#weathObs,#windMPH, #forecast {
     display: inline-block;
     font-weight: bold;
+    
    
 }
-#f{
-    font-weight: bold;
-}
+
 
 
 #weather_icon {
@@ -319,15 +318,21 @@ label {
     height: 250px;
 }
 
+#countyPage{
+    font-size: 3rem;
+    text-align: center;
+}
 
 
+section{
     
-
-
-
-
-
-
+    margin: 90px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    
+}
 
 /* This structure refers to p elements that are direct children of the footer element */
 

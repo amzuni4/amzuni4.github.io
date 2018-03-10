@@ -20,17 +20,20 @@ weatherObject.onload = function () {
 
 
 }
-var weatherForecast = new XMLHttpRequest();
-weatherForecast.open('GET', 'http://api.wunderground.com/api/9d9d50d9dae82d0f/forecast/q/MN/Franklin.json', true);
 
-weatherForecast.send();
 
-weatherForecast.onload = function () {
+var textForecast = new XMLHttpRequest();
+textForecast.open('GET', 'http://api.wunderground.com/api/9d9d50d9dae82d0f/forecast10day/q/MN/Franklin.json', true);
 
-    var weatherPredict = JSON.parse(weatherForecast.responseText);
+textForecast.send();
 
-    console.log(weatherPredict);
-    document.getElementById('tenForecast').innerHTML = weatherPredict.forecast.simpleforecast;
+textForecast.onload = function(){
+    
+    var tenDay = JSON.parse(textForecast.responseText);
 
+   console.log(tenDay);
+ 
+    document.getElementById('hi').innerHTML = tenDay.forecast.txt_forecast.forecastday["0"].fcttext;
+    
 
 }
