@@ -48,7 +48,7 @@
             <li><a href="gallery-9.html">Gallery</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="json">
         <h2>County Home Page</h2>
         <figure>
             <img src="images/franklin-original.jpeg" alt="franklinmeadow" sizes="50vw" srcset="images/franklin_small.jpg 200w,
@@ -57,15 +57,21 @@
 
         </figure>
 
-    </main>
+   
 
 
-<header>
-  
-</header>
-<section id="json">
+
+<section>
 </section>
-<script>
+
+    </main>
+    <footer>
+        <aside>
+            RealTime Weather Radar 123 Main Street Franklin, MU 12345
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | RealTime Weather Radar | <span id="getDate"></span></p>
+    </footer>
+        <script>
     var section = document.querySelector('section');
 
     var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
@@ -120,12 +126,5 @@
     }
     
 </script>
-   
-    <footer>
-        <aside>
-            RealTime Weather Radar 123 Main Street Franklin, MU 12345
-        </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved | RealTime Weather Radar | <span id="getDate"></span></p>
-    </footer>
  </body>
 </html>
