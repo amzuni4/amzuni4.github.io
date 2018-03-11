@@ -309,8 +309,7 @@ label {
 
 #weather_icon {
  
-    width: 250px;
-    height: 250px;
+    width: 25%;
 }
 
 #countyPage {
@@ -318,28 +317,17 @@ label {
     text-align: center;
 }
 
+}
 #json section{
-       width:100%;
-        display: flex;
-        flex-direction: column;
-        
-    }
-#json section article{
-    width:80%;
-    display:flex;
+    display: inline-block;
+    margin: 25%;
+    
+}
+
+#weatherContainer{
+    display: flex;
     flex-direction: column;
-    margin:0 10%;
 }
-
-#json p{
-    margin:0;
-}
-
-
-}
-
-
-
 
 /* This structure refers to p elements that are direct children of the footer element */
 
