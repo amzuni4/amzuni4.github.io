@@ -9,7 +9,7 @@ weatherObject.onload = function () {
 
     console.log(weatherInfo);
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.full;
-    document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
+    document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_full;
     document.getElementById('weathObs').innerHTML = weatherInfo.current_observation.weather;
     document.getElementById('weather_icon').src = weatherInfo.current_observation.icon_url;
 
