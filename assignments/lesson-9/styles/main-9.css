@@ -302,33 +302,48 @@ label {
     color: black;
 }
 
-
-
-
-
-
 #weather_icon {
  
     width: 25%;
 }
 
-#countyPage {
-    font-size: 3rem;
-    text-align: center;
-}
-
-}
-#json section{
-    display: inline-block;
-    margin: 25%;
-    
-}
 
 #weatherContainer{
     display: flex;
     flex-direction: column;
 }
+   #json section {
+        width: 390px;
+        display: block;
+        flex-direction: row-reverse;
+        font-size: 20px;
 
+    }
+    #json section article {
+        display: block;
+        margin: 8px;
+        border: 2px solid #247863;
+    }
+    #json h2 {
+        padding: 3px;
+        margin: 8px;
+        text-decoration-line: underline;
+        font-size: 30px;
+        letter-spacing: 3px;
+        color: #247863;
+    }
+    #json p {
+        padding: 2px;
+        margin: 3px;
+        margin-right: 12px;
+        
+    }
+    #json ul li {
+        ;
+        color: #274262;
+        background-color: beige;
+    }
+}
 /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
