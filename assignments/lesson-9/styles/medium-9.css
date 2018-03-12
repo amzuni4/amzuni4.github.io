@@ -208,12 +208,7 @@
 
     }
   
-      section{
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 10px;
-        
-    }
+   
 #json section{
        width:960px;
         display: flex;
