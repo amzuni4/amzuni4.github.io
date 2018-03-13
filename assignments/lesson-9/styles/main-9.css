@@ -125,7 +125,7 @@ nav ul li a {
     border-top: 1px solid #E0E6E8;
 }
 
-nav ul li.active  {
+nav ul li.active a {
     color: #ffffff;
     background-color: #7CABA8;
 }
@@ -304,43 +304,28 @@ label {
 
 
 #weather_icon {
-
     width: 25%;
 }
 
 
-#json section {
-    width: 390px;
-    display: block;
-    flex-direction: row-reverse;
-    font-size: 20px;
-
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 5px;
 }
 
-#json section article {
-    display: block;
-    margin: 8px;
+.article-item {
     border: 2px solid #247863;
+    text-align: center;
+    padding: 5px;
 }
 
-#json h2 {
-    padding: 3px;
-    margin: 8px;
+.article-item h2 {
     text-decoration-line: underline;
     font-size: 30px;
     letter-spacing: 3px;
     color: #247863;
-}
-
-#json p {
-    padding: 2px;
-    margin: 3px;
-    margin-right: 12px;
-
-}
-
-#json ul li {
-    color: #274262;
 }
 
 

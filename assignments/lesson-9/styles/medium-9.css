@@ -207,44 +207,10 @@
         letter-spacing: 1px;
 
     }
-
-
-    #json section {
-        width: 960px;
-        display: flex;
-        flex-direction: row-reverse;
-        font-size: 14px;
-
-    }
-    #json section article {
-        width: 25%;
-        display: block;
-        border: 2px solid #247863;
-        margin: 18px;
+    
+    .article-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    #json h2 {
-
-
-        padding: 20px;
-        margin: 2px;
-        text-decoration-line: underline;
-        font-size: 20px;
-        letter-spacing: 6px;
-
-        color: #247863
-    }
-    #json p {
-        padding: 12px;
-        margin: 5px;
-        margin-right: 12px;
-
-
-    }
-
-    #json ul li {
-
-        margin: 22px;
-        color: #274262;
-    }
 }

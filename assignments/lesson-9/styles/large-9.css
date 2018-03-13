@@ -175,32 +175,9 @@
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     }
 
-    #json section {
-        width: 1710px;
-        display: flex;
-        flex-direction: row-reverse;
-        font-size: 24px;
 
-    }
-    #json section article {
-        display: block;
-        margin: 2px;
-    }
-    #json h2 {
-        padding: 80px;
-        margin: 11px;
-        text-decoration-line: underline;
-        font-size: 42px;
-        letter-spacing: 3px;
-        color: #247863;
-    }
-    #json p {
-        padding: 12px;
-        margin: 5px;
-        margin-right: 12px;
-    }
-    #json ul li {
-        margin: 22px;
-        color: #274262;
+    .article-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
