@@ -160,8 +160,8 @@
             for(i=0, i<menu.length; i++) {
                 var currentURL=(menu[i].getAttribute("href"));
                 menu[i].parentNode.className=""; // turns off highlights by default
-                if (currentURL === pageHREF) {
-                    menu[i].parentNode.className = "active"; // turn on if a match
+                if (currentURL===pageHREF) {
+                    menu[i].parentNode.className="active"; // turn on if a match
                 } // end if
             } // end of the search for a match
         } //end of i ==

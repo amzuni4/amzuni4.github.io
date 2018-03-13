@@ -185,6 +185,8 @@
     #json section article {
         display: block;
         margin: 2px;
+        background-color: yellow;
+        justify-content: space-around;
     }
     #json h2 {
         padding: 80px;
