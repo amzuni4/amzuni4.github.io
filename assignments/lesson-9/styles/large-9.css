@@ -176,18 +176,15 @@
     }
 
     #json section {
-        width: 1680px;
+        width: 1710px;
         display: flex;
         flex-direction: row-reverse;
         font-size: 24px;
-        background-color: pink;
 
     }
     #json section article {
         display: block;
         margin: 2px;
-        background-color: yellow;
-        justify-content: space-around;
     }
     #json h2 {
         padding: 80px;
