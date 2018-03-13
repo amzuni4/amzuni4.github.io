@@ -24,15 +24,18 @@
     <script src="scripts/adjustrating.js"></script>
     <script src="scripts/wu-weather.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115531362-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115531362-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-115531362-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115531362-1');
+    </script>
 
 </head>
 
@@ -50,17 +53,17 @@
     <!-- site navigation use placeholder references -->
     <nav class="clearfix">
         <button onclick="navToggle()">&#9776;</button>
-        <ul class="hide" id="primaryNav">
+        <ul class="hide" id="mainmenu">
             <li><a href="index9.html">Home</a></li>
-            <li class="active"><a href="../lesson-9/franklin-9.html">Franklin</a></li>
+            <li class="active"><a href="franklin-9.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
-            <li><a href="../lesson-9/stormcenter-9.html">Storm Center</a></li>
-            <li><a href="../lesson-9/gallery-9.html">Gallery</a></li>
+            <li><a href="stormcenter-9.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
         </ul>
     </nav>
 
-    <main id= "franklin">
+    <main id="franklin">
         <h2>The City of Franklin</h2>
         <figure>
             <img src="images/franklin-original.jpeg" alt="franklinmeadow" sizes="50vw" srcset="images/franklin_small.jpg 200w,
@@ -81,7 +84,7 @@
             <p> Current Temperature is: <span id="currentTemp"> </span>&deg;f</p>
             <p> Current Wind in MPH: <span id="windMPH"></span>mph</p>
             <p> Weather Forecast is: <span id="forecast"></span> :</p>
-            <p><span id="hi"></span></p> 
+            <p><span id="hi"></span></p>
 
 
 
@@ -145,7 +148,24 @@
         <p class="footer-bar">&copy;2018 All Rights Reserved | RealTime Weather Radar | <span id="getDate"></span></p>
     </footer>
 
+    <script>
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF=urlArray[urlArray.length-1];
 
+        if (pageHREF !== "") {
+            var menu = document.querySelectorAll('ul#mainmenu li a');
+            var i;
+            //loops through menu items in then navigation
+            for(i=0, i<menu.length; i++) {
+                var currentURL=(menu[i].getAttribute("href"));
+                menu[i].parentNode.className=""; // turns off highlights by default
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = "active"; // turn on if a match
+                } // end if
+            } // end of the search for a match
+        } //end of i ==
+    </script>
 
 </body>
 
