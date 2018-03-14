@@ -1,0 +1,335 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'Myriad Apple', sans-serif;
+    font-size: 16px;
+    color: #274262;
+    background-color: #FFFAF6;
+    /* Declare the base font-family - from google font api or other */
+}
+
+section.forecast {
+    display: none;
+}
+
+
+header,
+nav,
+main,
+footer {
+
+    max-width: 100%;
+}
+
+
+header {
+    background-color: #F0F4FA;
+
+
+}
+
+header h1 {
+    font-family: 'Rock Salt', cursive;
+    padding: 10px;
+    font-size: 1.4em;
+    line-height: 2em;
+    color: #274262;
+}
+
+header .subheading {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 12px;
+    margin-bottom: 1px;
+    font-family: 'Myriad Apple', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: #006E52;
+    background-color: #FFFAF6;
+}
+
+nav button {
+    display: flex;
+    flex-direction: row;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #FFFAF6;
+}
+
+nav {
+    background: #247863;
+
+    background: #006e2e;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #006e2e 11%, #247863 38%, #006e2e 44%, #006e2e 68%, #247863 97%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #006e2e 11%, #247863 38%, #006e2e 44%, #006e2e 68%, #247863 97%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #006e2e 11%, #247863 38%, #006e2e 44%, #006e2e 68%, #247863 97%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#247863', GradientType=0);
+    /* IE6-9 */
+}
+
+
+nav ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li {
+    text-align: center;
+    border-bottom: 1px solid #E0E6E8;
+
+    font-size: 22px;
+
+}
+
+li:first-child {
+    border-top: 2px solid #E0E6E8;
+    ;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+nav ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #E0E6E8;
+    border-top: 1px solid #E0E6E8;
+}
+
+nav ul li.active a {
+    color: #ffffff;
+    background-color: #7CABA8;
+}
+
+nav ul li a:hover {
+    color: #7CABA8;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    font-family: 'Bembo Book MT Pro', serif;
+    padding: 10px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #274262;
+}
+
+main h2,
+h3 {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align-last: left;
+    font-size: 1em;
+
+}
+
+main figure {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+
+
+.current {
+    display: flex;
+    flex-basis: 30px;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    align-content: center;
+}
+
+#logo {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 12pt;
+    left: 270pt;
+    z-index: 10;
+    width: 68px;
+    height: 68px;
+}
+
+
+article p.town-article img,
+img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* fill the page in the small/phone view */
+    margin: auto;
+    overflow: auto;
+
+
+
+
+}
+
+.town-article {
+
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border: 2px solid #006E52;
+    padding: 2px;
+    margin: 10px;
+    background-color: #F0F4FA;
+    font-family: 'Myraid Apple', sans-serif;
+    font-size: 15px;
+    color: #274262;
+}
+
+div.weatherGallery {
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%)
+}
+
+div.weatherGallery figure {
+    margin: 2rem 0;
+    border: 1px solid;
+}
+
+div.weatherGallery figure img {
+    width: 100%;
+}
+
+div.weatherGallery figure figcaption {
+    text-align: center;
+    font-family: 'Myriad Apple', sans-serif;
+    font-size: .6em;
+
+}
+
+footer {
+
+    background-color: #247863;
+}
+
+footer aside,
+footer > p {
+
+
+    background-color: #247863;
+    font-family: 'Myriad Apple', sans-serif;
+    color: #E0E6E8;
+    font-size: 12px;
+
+}
+
+#calltoaction {
+
+    box-sizing: border-box;
+    background-color: #628ca6;
+    font-family: 'Myriad Apple', sans-serif;
+    color: #fff;
+    margin: 2px;
+    padding: 12px;
+    font-size: 18px;
+}
+
+#General Info {
+    background-color: green;
+    color: #DFE8E7;
+}
+
+fieldset {
+    background-color: #E0E6E8;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: white solid 2px;
+}
+
+legend {
+    color: #247863;
+    font-family: 'Bembo Book MT Pro', serif;
+    font-size: 24px;
+
+}
+
+label {
+    display: block;
+    margin: .5em;
+
+}
+
+#thanks {
+    font-size: 26px;
+    font-weight: 900;
+
+}
+
+#report {
+    font-size: 14px;
+    color: black;
+}
+
+
+#weather_icon {
+    width: 25%;
+}
+
+
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 5px;
+}
+
+.article-item {
+    border: 2px solid #247863;
+    text-align: center;
+    padding: 5px;
+}
+
+.article-item h2 {
+    text-decoration-line: underline;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #247863;
+}
+
+
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
