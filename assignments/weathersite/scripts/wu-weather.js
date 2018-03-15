@@ -12,7 +12,7 @@ weatherObject.onload = function () {
     document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
     document.getElementById('weathObs').innerHTML = weatherInfo.current_observation.weather;
     document.getElementById('weather_icon').src = weatherInfo.current_observation.icon_url;
-
+    document.getElementById('windChill').innerHTML = weatherInfo.current_observation.windchill_f;
 
     document.getElementById('windMPH').innerHTML = weatherInfo.current_observation.wind_mph;
     document.getElementById('forecast').innerHTML = weatherInfo.current_observation.feelslike_string;

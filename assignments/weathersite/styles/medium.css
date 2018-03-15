@@ -1,38 +1,34 @@
-@media only screen and (min-width: 64em) {
-
-    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-    article p.town-article img {
-        width: 55%;
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    nav button {
+        display: none;
     }
-    .town-article {
-        width: 960px;
-        height: 400px;
-        border: 2px solid #006E52;
-        padding: 5px;
-        margin: 25px;
-        font-family: 'Myriad Apple', sans-serif;
-        font-size: 16px;
+    /* hamburger button does not need to be shown */
+    section.forecast {
+        display: table;
     }
-    header .subheading {
-        margin-bottom: 4px;
-        margin-top: 5px;
-        font-family: 'Myriad Apple';
-        font-weight: normal;
-        font-size: 20px;
-        color: #006E52;
-        background-color: #FFFAF6;
+    /* show the 10-day forecast with the medium view and up */
+   
+    /* responsive images */
+    img {
+        width: 100%;
+        height: 100%;
+        margin: 20pt;
+        overflow: auto;
+    }
+    #meadow {
+        width: 100%;
     }
     main h2,
     h3 {
         text-align-last: left;
         font-size: 2em;
-
     }
     header h1 {
         font-family: 'Rock Salt', cursive;
-        padding: 20px;
+        padding: 25px;
         font-size: 2em;
-        line-height: 1.5em;
+        line-height: 2em;
         color: #274262;
     }
     h2,
@@ -43,8 +39,18 @@
         line-height: 1.5em;
         color: #274262;
     }
+    header .subheading {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4px;
+        margin-top: 5px;
+        font-family: 'Myriad Apple';
+        font-weight: normal;
+        font-size: 18px;
+        color: #006E52;
+        background-color: #FFFAF6;
+    }
     nav {
-        background: #247863;
         background: #006e2e;
         /* Old browsers */
         background: -moz-linear-gradient(top, #006e2e 11%, #247863 38%, #006e2e 44%, #006e2e 68%, #247863 97%);
@@ -58,7 +64,6 @@
     }
     nav button {
         display: none;
-
     }
     nav ul.hide {
         display: flex;
@@ -66,31 +71,40 @@
 
     }
     nav ul {
+
         list-style-type: none;
-        margin-left: 2%;
+        margin-left: 1px;
+        border-left: none;
         flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
-        overflow: hidden;
         font-family: 'Myriad Apple';
-        font-size: 14px;
+        font-size: 20rem;
     }
+
     nav ul li {
+        -ms-flex: 1 0 auto;
 
         border-right: 1px solid #F0F4FA;
+        border-bottom: none
+    }
+
+    li:first-child {
+        border-left: none;
     }
     li:last-child {
         border-right: none;
-
+        ;
     }
+
     nav ul li a {
-        display: flex;
+
+
         color: #E0E6E8;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         font-family: 'Myriad Apple';
         font-size: 18px;
-        border-bottom: none;
     }
     nav ul li.active a {
         color: #ffffff;
@@ -99,68 +113,34 @@
         color: #FFD3B9;
     }
     section {
-        display: contents;
-
+        display: table;
     }
     header img {
+        display: flex;
+        flex-direction: column;
         max-width: 255px;
         max-height: 300px;
         border-radius: 5px;
-        background-color: transparent;
         /*adds 3d effect to images*/
     }
-
     #logo {
+        display: flex;
+        flex-flow: column;
         position: absolute;
-        top: 1pt;
-        left: 375pt;
+        left: 380pt;
         z-index: 10;
-        width: 88px;
-        height: 88px;
+        width: 82px;
+        height: 82px;
     }
-    table,
-    th,
-    td {
-        border: 2px solid #006E52;
-        background-color: #E0E6E8;
-        padding: 18px;
-        font-family: 'Myriad Apple', sans-serif;
-        font-size: 50px;
-        color: #006E52;
-    }
-    footer {
+    div.weatherGallery {
 
-        background-color: #247863;
-    }
-    footer aside,
-    footer > p {
-
-
-        background-color: #247863;
-        font-family: 'Myriad Apple', sans-serif;
-        color: #E0E6E8;
-        font-size: 12px
-    }
-    #container {
-        margin: 12px auto;
-        border: 8px dashed #247863;
-        border-right: 12px;
-        border-left: 12px;
+        grid-template-columns: repeat(2, 49%);
+        grid-gap: 2%;
     }
     div.weatherGallery img {
         width: 100%;
-        height: 100%;
-        justify-content: flex-start;
-        background-color: #E0E6E8;
         margin-top: -.5px;
 
-
-    }
-
-    div.weatherGallery {
-
-        grid-template-columns: repeat(3, 32%);
-        border: 12px;
     }
     div.weatherGallery figure {
         display: flex;
@@ -168,16 +148,65 @@
         width: 100%;
         flex-direction: column;
         align-content: flex-end;
-        margin-bottom: 2%;
 
     }
-    div.weatherGallery figure:hover {
-        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+
+    table,
+    th,
+    td {
+        border: 3px solid #006E52;
+        background-color: #E0E6E8;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: 'Myriad Apple', sans-serif;
+        font-size: 15px;
+        color: #006E52;
     }
 
+    footer {
+
+        background-color: #247863;
+    }
+    footer aside,
+    footer > p {
+
+        background-color: #247863;
+        font-family: 'Myriad Apple', sans-serif;
+        color: #E0E6E8;
+        font-size: 12px;
+    }
+    #thanks {
+        font-size: 5rem;
+        font-weight: 900;
+
+    }
+    #report {
+        font-size: 3rem;
+        color: black;
+        letter-spacing: 1px;
+
+    }
+
+    #weatherContainer {
+        display: flex;
+        flex-direction: row;
+       
+    }
 
     .article-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        
     }
+    .weatherCondition img{
+    width: 60%;
+}
+    
+    
+    .top{
+        margin-top: 277px;
+    }
+
 }

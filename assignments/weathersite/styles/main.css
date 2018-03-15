@@ -185,16 +185,14 @@ main figure {
     height: 68px;
 }
 
-
 article p.town-article img,
 img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     width: 100%;
     /* fill the page in the small/phone view */
-    margin: auto;
-    overflow: auto;
+    margin: auto:
 
 
 
@@ -204,7 +202,7 @@ img {
 .town-article {
 
 
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     width: 100%;
     height: auto;
@@ -216,6 +214,8 @@ img {
     font-size: 15px;
     color: #274262;
 }
+
+
 
 div.weatherGallery {
     padding: 0 2%;
@@ -302,17 +302,19 @@ label {
     color: black;
 }
 
-
-#weather_icon {
-    width: 25%;
+.weatherCondition img {
+    width: 70px;
+    padding-top: 3px;
+    margin: 90px;
 }
-
 
 .article-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
-    padding: 5px;
+    padding: 13px;
+    margin-bottom: 10px;
+
 }
 
 .article-item {
@@ -326,8 +328,20 @@ label {
     font-size: 30px;
     letter-spacing: 3px;
     color: #247863;
+
 }
 
+#weatherContainer {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid #006E52;
+    background-color: #F0F4FA;
+
+
+}
 
 
 /* This structure refers to p elements that are direct children of the footer element */
