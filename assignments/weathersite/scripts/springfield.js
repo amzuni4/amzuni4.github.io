@@ -11,7 +11,7 @@ GweatherObject.onload = function () {
     document.getElementById('Splace').innerHTML = weatherInfo.current_observation.display_location.full;
     document.getElementById('ScurrentTemp').innerHTML = weatherInfo.current_observation.temp_f;
     document.getElementById('SweathObs').innerHTML = weatherInfo.current_observation.weather;
-    document.getElementById('').src = weatherInfo.current_observation.icon_url;
+    document.getElementById('Sweather_icon').src = weatherInfo.current_observation.icon_url;
  document.getElementById('SwindChill').innerHTML = weatherInfo.current_observation.windchill_f;
 
     document.getElementById('SwindMPH').innerHTML = weatherInfo.current_observation.wind_mph;
@@ -30,6 +30,6 @@ GtxtForecast.onload = function() {
     var weatherText = JSON.parse(GtxtForecast.responseText);
     console.log(weatherText);
 
-    document.getElementById('').innerHTML = weatherText.forecast.txt_forecast.forecastday["0"].fcttext;
+    document.getElementById('Shi').innerHTML = weatherText.forecast.txt_forecast.forecastday["0"].fcttext;
 
 }
