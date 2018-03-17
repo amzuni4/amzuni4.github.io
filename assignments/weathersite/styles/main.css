@@ -196,19 +196,19 @@ img {
 }
 
 
-.para{
+.para {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     background-color: #F0F4FA;
-   padding-right: 12px;
+    padding-right: 12px;
     padding-left: 12px;
     margin: 2px;
     font-family: 'Myraid Apple', sans-serif;
     font-size: 15px;
     color: #274262;
-      border: 1px solid #247863;  
+    border: 1px solid #247863;
 
 }
 
@@ -239,7 +239,7 @@ div.weatherGallery figure figcaption {
 footer {
 
     background-color: #247863;
-    top:-100px;
+    top: -100px;
 }
 
 footer aside,
@@ -304,8 +304,6 @@ label {
     width: 220px;
     padding-top: 3px;
     margin-bottom: 4px;
-    
-    
 }
 
 .article-container {
@@ -341,9 +339,6 @@ label {
     margin-top: 5px;
     flex-direction: column;
     text-align: center;
-   
-
-
 }
 
 
