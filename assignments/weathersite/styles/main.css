@@ -195,20 +195,21 @@ img {
     margin: auto;
 }
 
-.town-article {
 
-
-    display: inline-flex;
+.para{
+    display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
-    border: 2px solid #006E52;
-    padding: 2px;
-    margin: 10px;
+    height: 100%;
     background-color: #F0F4FA;
+   padding-right: 12px;
+    padding-left: 12px;
+    margin: 2px;
     font-family: 'Myraid Apple', sans-serif;
     font-size: 15px;
     color: #274262;
+      border: 1px solid #247863;  
+
 }
 
 
@@ -238,6 +239,7 @@ div.weatherGallery figure figcaption {
 footer {
 
     background-color: #247863;
+    top:-100px;
 }
 
 footer aside,
@@ -299,13 +301,16 @@ label {
 }
 
 .weatherCondition img {
-    width: 70px;
+    width: 220px;
     padding-top: 3px;
-    margin: 90px;
+    margin-bottom: 4px;
+    
+    
 }
 
 .article-container {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-gap: 10px;
     padding: 13px;
@@ -329,12 +334,14 @@ label {
 
 #weatherContainer {
     display: flex;
+    width: 100%;
+    height: 30%;
     justify-content: center;
     padding: 2px;
+    margin-top: 5px;
     flex-direction: column;
     text-align: center;
-    border: 2px solid #006E52;
-    background-color: #F0F4FA;
+   
 
 
 }

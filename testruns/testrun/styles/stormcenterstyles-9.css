@@ -1,0 +1,32 @@
+
+fieldset{
+
+    
+}
+#Personal Info{
+    
+}
+#Storm Type{
+    
+}
+#Storm Region{
+    
+}
+#Danger{
+    display:block;
+    background-color:AA2B00;
+    color: white;
+    margin:1.5em 0;
+    border: #fff solid 1px; 
+    box-sizing: border-box;
+    width: 50%;
+}
+
+
+#Message{
+    
+}
+#submitbutton{
+    
+}
+

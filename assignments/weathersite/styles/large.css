@@ -2,26 +2,28 @@
 
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
     article p.town-article img {
-        width: 50%;
-        display: grid;
+        width: 100%;
+        display: inline-flex;
         justify-content: flex-end;
+        overflow: auto;
     }
 
     town-article {
         width: 100%;
-        
-        border: 2px solid #006E52;
+
+        border: 2px solid pink;
         padding: 5px;
-        
+
         font-family: 'Myriad Apple', sans-serif;
         font-size: 16px;
-      
+
     }
-   
-    franklin main{
+
+
+    franklin main {
         background: green;
     }
-    
+
     header .subheading {
         margin-bottom: 4px;
         margin-top: 5px;
@@ -107,6 +109,36 @@
     nav ul li a:hover {
         color: #FFD3B9;
     }
+
+    .town-article img {
+        /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        ;
+        width: 700px;
+        height: 5%;
+        /* fill the page in the small/phone view */
+        margin: 1px;
+        align-self: flex-end;
+        position: relative;
+        top: 310px;
+        left: 830px;
+    }
+
+    .para {
+
+        width: 820px;
+        height: 467px;
+
+        font-family: 'Myraid Apple', sans-serif;
+        font-size: 25px;
+        justify-content: center;
+        color: #274262;
+        border: 1px solid #247863;
+        position: relative;
+        top: -170px;
+        left: 60px;
+
+
+    }
     section {
         display: contents;
 
@@ -189,14 +221,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
- 
-   
+
+
 
     #weatherContainer {
         display: flex;
         flex-direction: row;
     }
- .top {
-        margin-top: 205px;
+    .top {
+        margin-top: 133px;
     }
 }
