@@ -1,3 +1,4 @@
+main.css
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
 * {
@@ -144,6 +145,7 @@ main {
     font-size: 1.5em;
     line-height: 1.5em;
     color: #274262;
+   
 }
 
 main h2,
@@ -152,6 +154,7 @@ h3 {
     flex-direction: column-reverse;
     text-align-last: left;
     font-size: 1em;
+    
 
 }
 
@@ -193,6 +196,8 @@ img {
     width: 100%;
     /* fill the page in the small/phone view */
     margin: auto;
+    overflow: auto;
+   
 }
 
 
@@ -301,7 +306,7 @@ label {
 }
 
 .weatherCondition img {
-    width: 220px;
+    width: 150px;
     padding-top: 3px;
     margin-bottom: 4px;
 }
@@ -320,18 +325,23 @@ label {
     border: 2px solid #247863;
     text-align: center;
     padding: 5px;
+   
+   
 }
 
 .article-item h2 {
+   
     text-decoration-line: underline;
     font-size: 30px;
     letter-spacing: 3px;
     color: #247863;
 
+    
+
 }
 
 #weatherContainer {
-    display: flex;
+    display: grid;
     width: 100%;
     height: 30%;
     justify-content: center;
@@ -340,6 +350,28 @@ label {
     flex-direction: column;
     text-align: center;
 }
+
+
+    #weather_icon {
+        width: 25%;
+        display: grid;
+        position: relative;
+        top: 20px;
+        left: 10px;
+    }
+    #Sweather_icon {
+        width: 25%;
+        display: grid;
+        position: relative;
+        top: 20px;
+        left: 10px;
+    }
+
+    .top {
+        margin-top: 0;
+    }
+
+
 
 
 /* This structure refers to p elements that are direct children of the footer element */
