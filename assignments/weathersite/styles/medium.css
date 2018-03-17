@@ -221,35 +221,35 @@
 
     }
 
-   
+
     .article-container {
-        display:grid;
+        display: grid;
         grid-template-columns: .5fr .5fr .5fr;
 
-        
+
 
     }
-    
+
     #weatherContainer {
         display: grid;
         justify-content: center;
-          grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
 
     }
 
-   
+
     #weather_icon {
         width: 25%;
         display: grid;
         position: relative;
-        top:20px;
+        top: 20px;
         left: 150px;
     }
-      #Sweather_icon{
-           width: 25%;
+    #Sweather_icon {
+        width: 25%;
         display: grid;
         position: relative;
-        top:20px;
+        top: 20px;
         left: 150px;
     }
 
