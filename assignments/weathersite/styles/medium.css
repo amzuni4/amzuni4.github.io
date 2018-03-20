@@ -120,6 +120,37 @@
         height: 70%;
     }
 
+    .weatherCondition,
+    .top {
+        width: 45%;
+    }
+
+
+    #weather_icon {
+        width: 150px;
+        height: 150px;
+        margin-top: 80px;
+        margin-left: -50px;
+    }
+    #Gweather_icon {
+        width: 150px;
+        height: 150px;
+        margin-top: 40px;
+        margin-left: -50px;
+    }
+    #Sweather_icon {
+        width: 150px;
+        height: 150px;
+        margin-top: 40px;
+        margin-left: -50px;
+    }
+
+
+    #weatherContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
 
 
     .town-article img {
@@ -220,40 +251,9 @@
         letter-spacing: 1px;
 
     }
-
-
     .article-container {
         display: grid;
         grid-template-columns: .5fr .5fr .5fr;
-
-
-
     }
 
-    #weatherContainer {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-
-    #weather_icon {
-        width: 25%;
-        display: grid;
-        position: relative;
-        top: 20px;
-        left: 150px;
-    }
-    #Sweather_icon {
-        width: 25%;
-        display: grid;
-        position: relative;
-        top: 20px;
-        left: 150px;
-    }
-
-    .top {
-        margin-top: 135px;
-    }
 }

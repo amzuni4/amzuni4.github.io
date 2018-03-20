@@ -27,5 +27,17 @@ GtxtForecast.onload = function() {
     console.log(weatherText);
 
     document.getElementById('Ghi').innerHTML = weatherText.forecast.txt_forecast.forecastday["0"].fcttext;
+    
+    var weatherTen = JSON.parse(GtxtForecast.responseText).forecast.simpleforecast.forecastday;    
+    var tbody = document.querySelector('tbody');
+    var tr = document.createElement('tr');
 
+    for (var i = 0; i < weatherTen.length; i++) {
+        var td = document.createElement('td');
+        td.textContent = weatherTen[i].high.fahrenheit + '\u00B0' + 'F';
+        tr.appendChild(td);
+        tbody.appendChild(tr);
+
+    }
+    console.log(weatherTen);
 }

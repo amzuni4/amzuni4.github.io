@@ -1,12 +1,11 @@
 @media only screen and (min-width: 64em) {
 
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    town-article h3 {
 
-    town-article h3{
- 
         align-content: flex-end;
         position: relative;
-        top:200px;
+        top: 200px;
     }
 
 
@@ -100,13 +99,13 @@
         color: #FFD3B9;
     }
 
-  
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     .town-article img {
         /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
         ;
@@ -118,10 +117,10 @@
         top: 170px;
         left: 50px;
         border: 2px solid rgb(200, 200, 200);
-    box-shadow: 5px 5px 7px .8px #628ca6;
-    
+        box-shadow: 5px 5px 7px .8px #628ca6;
+
     }
-   
+
 
     .para {
 
@@ -130,15 +129,15 @@
 
         font-family: 'Myraid Apple', sans-serif;
         font-size: 24px;
-        
-        color: #274262;
-    
-        justify-content: center;
-        
-        position: relative;
-       
 
-top: -130px;
+        color: #274262;
+
+        justify-content: center;
+
+        position: relative;
+
+
+        top: -130px;
         left: 720px;
     }
 
@@ -172,45 +171,12 @@ top: -130px;
         font-size: 50px;
         color: #006E52;
     }
-    
-    
-    
-        #weatherContainer {
-        display: flex;
-        justify-content: center;
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-
-    #weather_icon {
-         width: 5%;
-        display: grid;
-        position: relative;
-        left: 865px;
-    }
-    #Sweather_icon {
-        width: 5%;
-        display: grid;
-        position: relative;
-        left: 865px;
-    }
-    
-    #Gweather_icon {
-        width: 5%;
-        display: grid;
-        position: relative;
-        left: 865px;
-    }
 
     .top {
         margin-top: 15px;
     }
 
 
-    
-    
-    
     footer {
 
         background-color: #247863;
@@ -253,8 +219,25 @@ top: -130px;
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
     }
 
+    #weather_icon{
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    
+     #Gweather_icon{
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    
+     #Sweather_icon{
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    
 }
-
-
-
-

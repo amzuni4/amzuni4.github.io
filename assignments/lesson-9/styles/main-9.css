@@ -305,6 +305,7 @@ label {
 
 #weather_icon {
     width: 25%;
+    position: static;
 }
 
 

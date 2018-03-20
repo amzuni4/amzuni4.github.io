@@ -1,11 +1,11 @@
-var GweatherObject = new XMLHttpRequest();
-GweatherObject.open('GET', 'https://api.wunderground.com/api/9d9d50d9dae82d0f/conditions/q/OR/Springfield.json', true);
+var SweatherObject = new XMLHttpRequest();
+SweatherObject.open('GET', 'https://api.wunderground.com/api/9d9d50d9dae82d0f/conditions/q/OR/Springfield.json', true);
 
-GweatherObject.send();
+SweatherObject.send();
 
-GweatherObject.onload = function () {
+SweatherObject.onload = function () {
 
-    var weatherInfo = JSON.parse(GweatherObject.responseText);
+    var weatherInfo = JSON.parse(SweatherObject.responseText);
 
     console.log(weatherInfo);
     document.getElementById('Splace').innerHTML = weatherInfo.current_observation.display_location.full;
@@ -21,15 +21,29 @@ GweatherObject.onload = function () {
 
 }
 
-var GtxtForecast = new XMLHttpRequest();
-GtxtForecast.open('GET','https://api.wunderground.com/api/9d9d50d9dae82d0f/forecast10day/q/OR/Springfield.json', true);
+var StxtForecast = new XMLHttpRequest();
+StxtForecast.open('GET','https://api.wunderground.com/api/9d9d50d9dae82d0f/forecast10day/q/OR/Springfield.json', true);
 
-GtxtForecast.send();
+StxtForecast.send();
 
-GtxtForecast.onload = function() {
-    var weatherText = JSON.parse(GtxtForecast.responseText);
+StxtForecast.onload = function() {
+    var weatherText = JSON.parse(StxtForecast.responseText);
     console.log(weatherText);
 
     document.getElementById('Shi').innerHTML = weatherText.forecast.txt_forecast.forecastday["0"].fcttext;
+    
+    var weatherTen = JSON.parse(StxtForecast.responseText).forecast.simpleforecast.forecastday;    
+    var tbody = document.querySelector('tbody');
+    var tr = document.createElement('tr');
+
+    for (var i = 0; i < weatherTen.length; i++) {
+        var td = document.createElement('td');
+        td.textContent = weatherTen[i].high.fahrenheit + '\u00B0' + 'F';
+        tr.appendChild(td);
+        tbody.appendChild(tr);
+
+    }
+    console.log(weatherTen);
+    
 
 }

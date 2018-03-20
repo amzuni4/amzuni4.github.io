@@ -45,7 +45,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
-            <li  class="active"><a href="springfield.html">Springfield</a></li>
+            <li class="active"><a href="springfield.html">Springfield</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -59,13 +59,12 @@
                          images/franklin_small.jpg 800w">
 
         </figure>
-         <section id="weatherContainer">
+
+        <h2><span id="Splace"> City, State</span></h2>
+        <section id="weatherContainer">
             <div class="weatherCondition">
-                <h2><span id="Splace"> City, State</span></h2>
-                <p><b>Currently:</b> <span id="SweathObs"></span>
-                    
-                    
-                    <img src=".current_observation.icon_url" alt="currentWeather"  id="Sweather_icon"></p>
+                <p><b>Currently:</b> <span id="SweathObs"></span></p>
+                <img src=".current_observation.icon_url" alt="currentWeather" id="Sweather_icon">
             </div>
             <div class="top">
                 <div>
@@ -98,23 +97,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>79&deg;F</td>
-                        <td>83&deg;F</td>
-                        <td>85&deg;F</td>
-                        <td>89&deg;F</td>
-                    </tr>
+                    <!-- JSON Info 10dayforecast -->
                 </tbody>
             </table>
         </section>
-        
-          <article>
+
+        <article>
             <h3>Ides of March Cloud Cover and Rain Storm</h3>
             <div class="town-article">
                 <img src="images/springfield-960ab.jpg" alt="stormylake"></div>
@@ -122,9 +110,9 @@
 
 
         </article>
-        
-        
-        
+
+
+
     </main>
 
     <footer>
@@ -133,7 +121,7 @@
         </aside>
         <p class="footer-bar">&copy;2018 All Rights Reserved | RealTime Weather Radar | <span id="getDate"></span></p>
     </footer>
-<script src="scripts/wayfinder.js"></script>
+    <script src="scripts/wayfinder.js"></script>
 
 </body>
 
