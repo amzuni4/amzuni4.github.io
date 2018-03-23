@@ -3,6 +3,7 @@ weatherObject.open('GET', 'https://api.wunderground.com/api/9d9d50d9dae82d0f/con
 
 weatherObject.send();
 
+
 weatherObject.onload = function () {
 
     var weatherInfo = JSON.parse(weatherObject.responseText);
@@ -33,3 +34,6 @@ txtForecast.onload = function() {
     document.getElementById('hi').innerHTML = weatherText.forecast.txt_forecast.forecastday["0"].fcttext;
 
 }
+
+http://api.wunderground.com/api/9d9d50d9dae82d0f/geolookup/q/94107.json
+
