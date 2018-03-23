@@ -2,140 +2,235 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Alcove Digital Systems</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-2.2.1.min.js"></script>
-	<script>
-		$(function () {
-			// All jQuery code goes here
-            $('button').css('border', '1px solid red');
-            $('input[name= "Num"]').css('border', '1px solid red');
-            $('input[name= "phoneNum"]').css('border', '1px solid red');
-            $('input[name!= "phoneNum"]').css('border', '1px solid red');
-
-			$('input[name*= "Val"]').css('border', '1px solid red');
-            $('input[name$= "Val"]').css('border', '1px solid red');
+    <meta charset="UTF-8">
+    <title>Alcove Digital Systems</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script>
+    /*
+        //start 3.1 tutorial
+        //get elements by ID change Logo Opacity to 20%
+        $(function () {
+		window.onload = function(){
+            var element = document.getElementById('alcoveLogo')
+            element.style.opacity = 0.2;
+        }
 		})
-	</script>
+      
+       //changes font color TO BLUE for all EVEN items in list
+        window.onload = function(){
+            var elements = document.getElementsByClassName('servicesBtn');
+            for(var i = 0; i < elements.length; i ++){
+                if(i % 2 == 0){ 
+                    elements[i].style.color = 'rgb(0, 106, 255)';
+                }
+            }
+        }
+        
+         
+        
+        //Creates a Red border and Background Color 
+        window.onload = function(){
+            var elements = document.getElementsByTagName('h2');
+            for(var i = 0; i < elements.length; i ++){
+                    elements[i].style.borderBottomColor = 'rgb(255, 0, 0)';
+                    elements[i].style.borderWidth = '2px';
+                    elements[i].style.borderStyle = 'solid';
+                    elements[i].style.backgroundColor = 'rgba( 255, 0,0, 0.2)';
+                }
+            }
+         
+        //changes the font color of THIRD hyperlink in the navigation to red
+        $(function(){
+            var element = document.querySelector(".navigation > li:nth-child(3) > a");
+             element.style.color = 'rgb(255, 0, 0)';
+             
+        })
+         
+
+        //changes the font color on EVEN hyperlinks in the navigation to red
+        $(function() {
+            var elements = document.querySelectorAll(".navigation > li:nth-child(even) > a");
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].style.color = 'rgb(255, 0, 0)';
+            }
+        })
+     
+
+        
+    //lesson 3.2 Tutorial
+        
+        //reset Logo opacity to 40%
+        $(function(){
+            $('#alcoveLogo').css('opacity', 0.4);
+            $('.servicesBtn').css('color', '#FFF');
+            })
+                
+        
+        
+        // Start 3.3 Tutorial
+
+
+
+        $(function() {
+            // creates red border outline on submit button
+            $('button').css('border', '1px solid red');
+            // creates red border outline on h2 headlines
+            $('h2').css('border', '1px solid red');
+            // creates a red border on the form field around name
+            $('input[name="nameVal"]').css('border', '1px solid red');
+            // creates a red border on the form field around things without a number (email)
+            $('input[name !="phoneNum"]').css('border', '1px solid red');
+            // creates a red border on the form field around things with numbers (phone number)
+            $('input[name*="Num"]').css('border', '1px solid red');
+            // $ grabs muliple input fields labeled "Val" (email and name) and puts a red border around items
+            $('input[name$="Val"]').css('border', '1px solid red');
+        })
+        */
+       // 3.6 Tutorial starts Here
+       
+        //Gets just one  Element that immediately follows the selection and changes the background of navigation menu (gets the sibling next to alcove logo div) which is the menu
+         $(function(){
+            // $('#alcoveLogo').next().css('background-color', 'rgba(255, 0, 0, 0.2)');
+             
+             //gets all child elements following the div (box 2 and 3 div) and changes background to red
+           //  $('.box1').nextAll().css('background-color', 'rgba(255, 0, 0, 0.2)');
+             
+             //get all child Elements (logo and div) and gives it a red background
+            // $('.header').children().css('background-color', 'rgba(255, 0, 0, 0.2)');
+             
+             //select catalogue list item
+             //$(".navigation > li:eq(2)").parent().css('opacity', '0.3');
+             //chnage multiple items and effects entire logo and an nav bar:
+            // $(".navigation > li:eq(2)").parent().parent().parent().css('opacity', '0.3');
+             //Get the nearest matching element
+             $('.servicesBtn').closest('div').css('background-color', 'rgba(255, 0, 0, 0.2)');
+         })
+
+    </script>
+
+
+
+
+
 </head>
 
 <body>
-	<!-- Master Container Div -->
-	<div class="container">
-		<!-- Header Div containing the Logo & Navigation Links -->
-		<div class="header">
-			<div class="logo" id="alcoveLogo"></div>
-			<div class="navbar">
-				<ul class="navigation">
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Catalog</a></li>
-					<li><a href="#">Support</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
-			</div>
-		</div>
-		<!-- Content Div -->
-		<div class="content">
-			<div class="headImage"></div>
-			<!-- Get a Free Quote Form -->
-			<div class="registerForm">
-				<form id="GetAQuoteForm">
-					<img class="ReqAQuoteImg" src="img/quote.png" alt="">
-					<br>
-					<div class="FormFieldHolder">
-						<div class="labelHolder">
-							<label>Full Name</label>
-						</div>
-						<div class="FieldHolder">
-							<input type="text" name="nameVal">
-						</div>
-					</div>
+    <!-- Master Container Div -->
+    <div class="container">
+        <!-- Header Div containing the Logo & Navigation Links -->
+        <div class="header">
+            <div class="logo" id="alcoveLogo"></div>
+            <div class="navbar">
+                <ul class="navigation">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Content Div -->
+        <div class="content">
+            <div class="headImage"></div>
+            <!-- Get a Free Quote Form -->
+            <div class="registerForm">
+                <form id="GetAQuoteForm">
+                    <img class="ReqAQuoteImg" src="img/quote.png" alt="">
+                    <br>
+                    <div class="FormFieldHolder">
+                        <div class="labelHolder">
+                            <label>Full Name</label>
+                        </div>
+                        <div class="FieldHolder">
+                            <input type="text" name="nameVal">
+                        </div>
+                    </div>
 
-					<div class="FormFieldHolder">
-						<div class="labelHolder">
-							<label>E-Mail</label>
-						</div>
-						<div class="FieldHolder">
-							<input type="text" name="emailVal">
-						</div>
-					</div>
+                    <div class="FormFieldHolder">
+                        <div class="labelHolder">
+                            <label>E-Mail</label>
+                        </div>
+                        <div class="FieldHolder">
+                            <input type="text" name="emailVal">
+                        </div>
+                    </div>
 
-					<div class="FormFieldHolder">
-						<div class="labelHolder">
-							<label>Phone</label>
-						</div>
-						<div class="FieldHolder">
-							<input type="text" name="phoneNum">
-						</div>
-					</div>
+                    <div class="FormFieldHolder">
+                        <div class="labelHolder">
+                            <label>Phone</label>
+                        </div>
+                        <div class="FieldHolder">
+                            <input type="text" name="phoneNum">
+                        </div>
+                    </div>
 
-					<div class="FormFieldHolder">
-						<div class="labelHolder"></div>
-						<div class="FieldHolder">
-							<button id="ReqAQuoteBtn" data-code="028">Request A Quote !</button>
-						</div>
-					</div>
-				</form>
-			</div>
-			<h2 class="motto">We Bring Your Digital Dreams To Life</h2>
-			<!-- Content Boxes Container Div -->
-			<div class="contentBoxes">
-				<div class="boxes box1">
-					<h2>The Values that Drive Us</h2>
-					<hr>
-					<p>Alcove adopts various driving factors of corporate philosophy in our day to day activities that ultimately lead to success. We strive to achieve our value guidelines by incorporating our principles into each relationship with our clients to obtain long lasting customers.
-						<br>
-						<br>Our core values :
-						<br>
-						<br>
-					</p>
-					<ul>
-						<li>Innovative Ideas</li>
-						<li>Ownership</li>
-						<li>Frugality</li>
-						<li>Integrity</li>
-						<li>Trustworthiness</li>
-						<li>Customer Obsession</li>
-					</ul>
-				</div>
-				<div class="boxes box2">
-					<h2>What we do</h2>
-					<hr>
-					<p>Innovation is the key to success. Alcove's expertise covers a wide range of services, technologies, tools and platforms. Here are some of the things we're really good at :
-						<br>
-						<br>
-					</p>
-					<ul>
-						<li><a href="#" class="servicesBtn">Web Design & Development</a></li>
-						<li><a href="#" class="servicesBtn">Web Application Development</a></li>
-						<li><a href="#" class="servicesBtn">iOS Mobile Application Development</a></li>
-						<li><a href="#" class="servicesBtn">UI/UX Design & Development</a></li>
-						<li><a href="#" class="servicesBtn">Android Application Development</a></li>
-					</ul>
-				</div>
-				<div class="boxes box3">
-					<h2>Our Work</h2>
-					<hr>
-					<a href="#" class="showcaseBtn"><img src="img/websites.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/mobileapps.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/webapps.jpg" alt=""></a>
-					<select name="showcaseOthers" id="showcaseOthers">
+                    <div class="FormFieldHolder">
+                        <div class="labelHolder"></div>
+                        <div class="FieldHolder">
+                            <button id="ReqAQuoteBtn" data-code="028">Request A Quote !</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h2 class="motto">We Bring Your Digital Dreams To Life</h2>
+            <!-- Content Boxes Container Div -->
+            <div class="contentBoxes">
+                <div class="boxes box1">
+                    <h2>The Values that Drive Us</h2>
+                    <hr>
+                    <p>Alcove adopts various driving factors of corporate philosophy in our day to day activities that ultimately lead to success. We strive to achieve our value guidelines by incorporating our principles into each relationship with our clients to obtain long lasting customers.
+                        <br>
+                        <br>Our core values :
+                        <br>
+                        <br>
+                    </p>
+                    <ul>
+                        <li>Innovative Ideas</li>
+                        <li>Ownership</li>
+                        <li>Frugality</li>
+                        <li>Integrity</li>
+                        <li>Trustworthiness</li>
+                        <li>Customer Obsession</li>
+                    </ul>
+                </div>
+                <div class="boxes box2">
+                    <h2>What we do</h2>
+                    <hr>
+                    <p>Innovation is the key to success. Alcove's expertise covers a wide range of services, technologies, tools and platforms. Here are some of the things we're really good at :
+                        <br>
+                        <br>
+                    </p>
+                    <ul>
+                        <li><a href="#" class="servicesBtn">Web Design & Development</a></li>
+                        <li><a href="#" class="servicesBtn">Web Application Development</a></li>
+                        <li><a href="#" class="servicesBtn">iOS Mobile Application Development</a></li>
+                        <li><a href="#" class="servicesBtn">UI/UX Design & Development</a></li>
+                        <li><a href="#" class="servicesBtn">Android Application Development</a></li>
+                    </ul>
+                </div>
+                <div class="boxes box3">
+                    <h2>Our Work</h2>
+                    <hr>
+                    <a href="#" class="showcaseBtn"><img src="img/websites.jpg" alt=""></a>
+                    <a href="#" class="showcaseBtn"><img src="img/mobileapps.jpg" alt=""></a>
+                    <a href="#" class="showcaseBtn"><img src="img/webapps.jpg" alt=""></a>
+                    <select name="showcaseOthers" id="showcaseOthers">
 						<option value="01">UI/UX Design</option>
 						<option value="02">Big Data Implementation</option>
 						<option value="03">Graphic Design</option>
 						<option value="04">3D Animation</option>
 					</select>
-				</div>
-			</div>
-		</div>
+                </div>
+            </div>
+        </div>
 
-		<div class="footer">
-			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
-		</div>
-	</div>
+        <div class="footer">
+            <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
+        </div>
+    </div>
 </body>
 
 </html>

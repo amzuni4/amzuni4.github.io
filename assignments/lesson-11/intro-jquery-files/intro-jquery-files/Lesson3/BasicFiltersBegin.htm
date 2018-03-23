@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Basic Filters</title>
-	<link rel="stylesheet" href="css/filters.css">
-	<script src="js/jquery-2.2.1.min.js"></script>
-	<script>
-	$(function(){
-		// All jQuery code goes here
-        $('li:first').css('background-color', 'rgb(248, 95, 95)');
-$('li:last').css('background-color', 'rgb(248, 95, 95)');
-        $('li:even').css('background-color', 'rgb(248, 95, 95)');
-        $('li:odd').css('background-color', 'rgb(248, 95, 95)');
-        $('li:eq(3)').css('background-color', 'rgb(248, 95, 95)');
-	})
-	</script>
+    <meta charset="UTF-8">
+    <title>Basic Filters</title>
+    <link rel="stylesheet" href="css/filters.css">
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script>
+        //lesson 3.4
+        $(function() {
+            // All jQuery code goes here
+            //puts a red background on the first list item
+            $('li:first').css('background-color', 'rgb(248, 95, 95)');
+            //puts a red background on the Last list item
+            $('li:last').css('background-color', 'rgb(248, 95, 95)');
+            //puts a red background on the even list items
+            $('li:even').css('background-color', 'rgb(248, 95, 95)');
+            //puts a red background on the odd list items
+            $('li:odd').css('background-color', 'rgb(248, 95, 95)');
+            //puts a red background on strawberrries- the 4th list- item
+            $('li:eq(3)').css('background-color', 'rgb(248, 95, 95)');
+        })
+
+    </script>
 </head>
+
 <body>
-<ul>
-		<li>Apples</li> 
-		<li>Oranges</li>
-		<li>Peaches</li>
-		<li>Strawberries</li>
-		<li>Kiwi</li>
-</ul>
+    <ul>
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Peaches</li>
+        <li>Strawberries</li>
+        <li>Kiwi</li>
+    </ul>
 
 </body>
+
 </html>
