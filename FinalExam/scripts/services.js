@@ -1,5 +1,5 @@
-  $(document).ready(function () {
-        $.getJSON("data.json", function (data) {
+(document).ready(function () {
+        .getJSON("data.json", function (data) {
 
             var arrItems = [];      // THE ARRAY TO STORE JSON ITEMS.
             $.each(data, function (index, value) {
