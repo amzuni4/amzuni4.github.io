@@ -1,5 +1,4 @@
-{
-  "items" : [
+[
   {
     "repairs": "Tire Replacement",
     "category": "Maintainence",
@@ -24,10 +23,10 @@
     "repair": "Complete Bicycle Make-Over",
     "category": "Maintainence",
     "price": $215.00
-  },
+  }
 
  ]
-}
+
 
 
 

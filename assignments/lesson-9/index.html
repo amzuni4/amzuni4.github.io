@@ -81,7 +81,7 @@
 
 
     function showTowns(jsonObj) {
-        var townNames = jsonObj['towns'];
+        var townNames = jsonObj['items'];
 
         for (var i = 0; i < townNames.length; i++) {
             var myArticle = document.createElement('article');
@@ -94,28 +94,10 @@
             var myList = document.createElement('ul');
 
             myH2.textContent = townNames[i].name;
-            myPara1.textContent = 'Motto: ' + townNames[i].motto;
-            myPara2.textContent = 'Founded: ' + townNames[i].yearFounded;
-            myPara3.textContent = 'Population: ' + townNames[i].currentPopulation;
-            myPara4.textContent = 'Average RainFall: ' + townNames[i].averageRainfall;
-            myPara5.textContent = 'Events:';
-   
-            var townEvents = townNames[i].events;
-            for (var j = 0; j < townEvents.length; j++) {
-                var listItem = document.createElement('li') ;
-                listItem.textContent = townEvents[j];
-                myList.appendChild(listItem);
-            }
-
-            myArticle.appendChild(myH2);
-            myArticle.appendChild(myPara1);
-            myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
-            myArticle.appendChild(myPara4);
-            myArticle.appendChild(myPara5);
-            myArticle.appendChild(myList);
-
-            section.appendChild(myArticle);
+            myPara1.textContent = 'repairs: ' + townNames[i].repairs;
+            myPara2.textContent = 'category: ' + townNames[i].category;
+            myPara3.textContent = 'price: ' + townNames[i].price;
+    
         }
     }
     
