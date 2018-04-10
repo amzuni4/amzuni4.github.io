@@ -1,29 +1,29 @@
 {
   "items" : [
   {
-    "Repairs": "Tire Replacement",
-    "Category": "Maintainence",
-    "Price": $125.00
+    "repairs": "Tire Replacement",
+    "category": "Maintainence",
+    "price": $125.00
   },
   {
-    "Repairs": "Chain Cleaning",
-    "Category": "Maintainence",
-    "Price": $26.00
+    "repairs": "Chain Cleaning",
+    "category": "Maintainence",
+    "price": $26.00
   },
   {
-    "Repairs": "Wheel Alignment",
-    "Category": "Maintainence",
-    "Price": $90.00
+    "repairs": "Wheel Alignment",
+    "category": "Maintainence",
+    "price": $90.00
   },
   {
-    "Repair": "Shifter Adjustment",
-    "Category": "Maintainence",
-    "Price": $30.00
+    "repair": "Shifter Adjustment",
+    "category": "Maintainence",
+    "price": $30.00
   },
   {
-    "Repair": "Complete Bicycle Make-Over",
-    "Category": "Maintainence",
-    "Price": $215.00
+    "repair": "Complete Bicycle Make-Over",
+    "category": "Maintainence",
+    "price": $215.00
   },
 
  ]
