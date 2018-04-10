@@ -1,87 +1,107 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
-    <title>Our superheroes</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <header>
-
-    </header>
-
-    <section>
-
-    </section>
-
-    <script>
-        var header = document.querySelector('header');
-        var section = document.querySelector('section');
-
-        var header = document.querySelector('header');
-        var section = document.querySelector('section');
-
-        var requestURL = 'file:///C:/Users/admin/Desktop/cit230/JSON/supers.json';
-        var request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-
-        request.responseType = 'json';
-        request.send();
-
-        request.onload = function() {
-            var superHeroes = request.response;
-            populateHeader(superHeroes);
-            showHeroes(superHeroes);
-        }
-
-        function populateHeader(jsonObj) {
-            var myH1 = document.createElement('h1');
-            myH1.textContent = jsonObj['squadName'];
-            header.appendChild(myH1);
-
-            var myPara = document.createElement('p');
-            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-            header.appendChild(myPara);
-        }
-function showHeroes(jsonObj) {
-  var heroes = jsonObj['members'];
-      
-  for (var i = 0; i < heroes.length; i++) {
-    var myArticle = document.createElement('article');
-    var myH2 = document.createElement('h2');
-    var myPara1 = document.createElement('p');
-    var myPara2 = document.createElement('p');
-    var myPara3 = document.createElement('p');
-    var myList = document.createElement('ul');
-
-    myH2.textContent = heroes[i].name;
-    myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-    myPara2.textContent = 'Age: ' + heroes[i].age;
-    myPara3.textContent = 'Superpowers:';
-        
-    var superPowers = heroes[i].powers;
-    for (var j = 0; j < superPowers.length; j++) {
-      var listItem = document.createElement('li');
-      listItem.textContent = superPowers[j];
-      myList.appendChild(listItem);
-    }
-
-    myArticle.appendChild(myH2);
-    myArticle.appendChild(myPara1);
-    myArticle.appendChild(myPara2);
-    myArticle.appendChild(myPara3);
-    myArticle.appendChild(myList);
-
-    section.appendChild(myArticle);
-  }
+    <style>
+   
+th {
+    border: 2px solid rgb(190, 190, 190);
+    text-align: center;
+    letter-spacing: 0px;
+    padding-bottom: 8px;
+    padding-top: 10px
 }
-    </script>
-</body>
 
+th {
+    color: white;
+    font-weight: bold;
+    background-color: #AA3F00;
+    font-size: 14px;
+    text-align: center;
+}
+
+td {
+    border: 2px solid rgb(190, 190, 190);
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: .5px;
+    color: #AA3F00;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+tr,
+td {
+    background-color: #FFF9F6;
+}
+
+   table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    box-shadow: 5px 5px 7px .8px #628ca6;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 100%;
+   
+}
+
+    </style>
+    
+    
+</head>
+<body>
+    <div id="showData"></div>
+</body>
+    <script>
+    $(document).ready(function () {
+        $.getJSON("sample.json", function (data) {
+
+            var arrItems = [];      // THE ARRAY TO STORE JSON ITEMS.
+            $.each(data, function (index, value) {
+                arrItems.push(value);       // PUSH THE VALUES INSIDE THE ARRAY.
+            });
+
+            // EXTRACT VALUE FOR TABLE HEADER.
+            var col = [];
+            for (var i = 0; i < arrItems.length; i++) {
+                for (var key in arrItems[i]) {
+                    if (col.indexOf(key) === -1) {
+                        col.push(key);
+                    }
+                }
+            }
+
+            // CREATE DYNAMIC TABLE.
+            var table = document.createElement("table");
+
+            // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+            var tr = table.insertRow(-1);                   // TABLE ROW.
+
+            for (var i = 0; i < col.length; i++) {
+                var th = document.createElement("th");      // TABLE HEADER.
+                th.innerHTML = col[i];
+                tr.appendChild(th);
+            }
+
+            // ADD JSON DATA TO THE TABLE AS ROWS.
+            for (var i = 0; i < arrItems.length; i++) {
+
+                tr = table.insertRow(-1);
+
+                for (var j = 0; j < col.length; j++) {
+                    var tabCell = tr.insertCell(-1);
+                    tabCell.innerHTML = arrItems[i][col[j]];
+                }
+            }
+
+            // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+            var divContainer = document.getElementById("showData");
+            divContainer.innerHTML = "";
+            divContainer.appendChild(table);
+        });
+    });
+</script>
 </html>

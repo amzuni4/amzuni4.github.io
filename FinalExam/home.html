@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Amy Zuniga">
+    <meta name="description" content="Fictional Bicycle Touring, Service, and Online Shop">
+    <!-- external style references in the proper cascading order -->
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <script src="scripts/hamburger.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="images/SBC_Logo.png" alt="logo">
+
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading"> Our website informs bicycle enthusiasts of biking tours in the region. The site also serves as a platform for our online bicycle store, and our bicycle maintenance service.</div>
+
+    </header>
+
+
+    <!-- site navigation use placeholder references -->
+    <nav class="clearfix">
+        <button onclick="navToggle()">&#9776;</button>
+        <ul class="hide" id="primaryNav">
+
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="adventuretours.html">Adventure Tours</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Welcome!</h2>
+        <figure>
+            <img src="images/banner.jpg" alt="bikeveiw" sizes="50vw" srcset="images/banner.jpg 200w,
+                                                                                                    images/banner.jpg 500w,
+                                                                                                    images/banner.jpg 800w">
+
+
+
+        </figure>
+
+
+        <figure>
+
+            <h2>Ride With Us!</h2>
+            <img src="images/adventure_450.jpg" alt="trailbiking" id="biketrail">
+            <p id="enjoy">Enjoy breath-taking veiws, and incredible mountain trails, where you can relax, and enjoy the beauty of the earth</p>
+
+
+        </figure>
+
+        <article>
+            <h3>Schedule A Thrilling Biking Tour, Now!</h3>
+            <div>
+                <img src="images/girlnbike_450.jpg" alt="girlonbike" id="bikes"></div>
+            <div class="para"> The Moutain Spoke bicycle rentals, and service shop is located in Bozeman area of Montana. Contact us today, for special touring events. Holidays and Birthdays are our specialty!
+            </div>
+
+
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            3950 Valley Commons Drive Bozeman, MT
+        </aside>
+        <p class="footer-bar">&copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="getDate"></span>| <a href="reference.html" id="sources"> Sources </a>| <a href="video.html" id="video"> Overveiw</a></p>
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/wayfinder.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </footer>
+</body>
+
+</html>

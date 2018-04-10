@@ -1,0 +1,298 @@
+@media only screen and (min-width: 64em) {
+
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header .subheading {
+        margin-bottom: 4px;
+        margin-top: 5px;
+        font-family: 'Montserrat', serif;
+        color: #B86737;
+        font-weight: normal;
+        font-size: 20px;
+        background-color: #FFF;
+    }
+    main h2,
+    h3 {
+        text-align-last: left;
+        font-size: 2em;
+
+    }
+    header h1 {
+        font-family: 'Caveat Brush', cursive;
+        color: #04516A;
+        padding: 20px;
+        font-size: 4em;
+        line-height: 1.5em;
+
+    }
+    h2 {
+        font-family: 'Caveat Brush', cursive;
+        color: #04516A;
+        padding: 1.4px;
+        font-size: 2em;
+        line-height: 1.5em;
+
+    }
+    nav {
+        background: #fff;
+
+    }
+    nav button {
+        display: none;
+
+    }
+    nav ul.hide {
+        display: flex;
+
+
+    }
+    nav ul {
+        list-style-type: none;
+        margin-left: 18px;
+        flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        overflow: hidden;
+        font-family: 'Montserrat', serif;
+        color: #B86737;
+        font-size: 14px;
+    }
+    nav ul li {
+
+        border: 1px solid #B86737;
+    }
+    li:last-child {
+        border-right: none;
+
+    }
+    nav ul li a {
+        display: flex;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: 'Montserrat', serif;
+        color: #B86737;
+        font-size: 18px;
+        border-bottom: none;
+    }
+    nav ul li.active a {
+        color: #fff;
+    }
+    nav ul li a:hover {
+        color: #fff;
+    }
+    #logo {
+        position: absolute;
+        top: 60pt;
+        left: 410pt;
+        z-index: 10;
+        width: 88px;
+        height: 88px;
+    }
+
+    #biketrail {
+
+        width: 450px;
+        margin-left: 1100px;
+        padding-bottom: 22px;
+        z-index: -1;
+        position: static;
+        border: 2px solid rgb(200, 200, 200);
+        box-shadow: 5px 5px 7px .8px #628ca6;
+    }
+
+
+    #enjoy {
+        color: #628ca6;
+
+        padding: 12px;
+        justify-content: center;
+        margin-top: -150px;
+        width: 45%;
+        margin-bottom: 80px;
+
+
+    }
+
+
+    #bikes {
+        margin-top: 25px;
+        width: 30%;
+        margin-bottom: 20px;
+
+        margin-left: 90px;
+
+        border: 2px solid rgb(200, 200, 200);
+        box-shadow: 5px 5px 7px .8px #628ca6;
+    }
+    .para {
+        background-color: transparent;
+        border: none;
+        color: #628ca6;
+        padding: 12px;
+        justify-content: center;
+        margin-top: -150px;
+        margin-left: 660px;
+        width: 45%;
+        margin-bottom: 80px
+    }
+
+
+    /*Adventure Tours*/
+    #table1,
+    #table2,
+    #table3 {
+        margin-top: 12px;
+        margin-bottom: 20px;
+        width: 35%;
+        margin-left: 410px;
+
+    }
+    #avti1,
+    #avti2,
+    #avti3 {
+        margin-top: 25px;
+        width: 450px;
+        margin-bottom: 20px;
+
+        margin-left: 500px;
+
+        border: 2px solid rgb(200, 200, 200);
+        box-shadow: 5px 5px 7px .8px #628ca6;
+    }
+
+    #sgt,
+    #tt,
+    #mt {
+        background-color: #7FA2AD;
+        color: #fff;
+        border: 2px solid rgb(200, 200, 200);
+        text-align: justify;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 75%;
+        margin-left: 85px;
+    }
+
+    #thumbsup {
+
+        width: 50%;
+        margin-top: 120px;
+        margin-left: 350px;
+        padding: 22px;
+        z-index: -1;
+        position: static;
+        border: 2px solid rgb(200, 200, 200);
+        box-shadow: 5px 5px 7px .8px #628ca6;
+    }
+
+
+
+
+    #brokenbike {
+        width: 50%;
+        margin-top: 120px;
+        margin-left: 350px;
+        padding: 22px;
+        z-index: -1;
+        position: static;
+        border: 2px solid rgb(200, 200, 200);
+        box-shadow: 5px 5px 7px .8px #628ca6;
+    }
+    /*Service Styling*/
+    #services {
+        background-color: #7FA2AD;
+        color: #fff;
+
+        text-align: center;
+        padding: 2px;
+        margin-bottom: 10px;
+        border: none;
+        left: -78000px;
+    }
+
+
+
+    /*styles for sales page */
+    #images {
+        height: 400px;
+
+    }
+   
+    #carousel {
+        width: 600px;
+        height: 300px;
+        overflow: hidden;
+        margin-top: 35px;
+        margin-left: 550px;
+        border: none;
+    }
+
+    #carousel ul {
+        list-style: none;
+        width: 2400px;
+        height: 300px;
+        border: none;
+
+
+    }
+
+    #carousel ul li {
+
+        width: 600px;
+        height: 300px;
+        border: none;
+    }
+
+    #carousel ul li img {
+        width: 600px;
+        height: 300px;
+        border: none;
+    }
+
+button{
+    width: 25%;
+      color: #fff;
+    background-color: #AA3F00;
+    border: 2px solid #AA3F00;
+}
+
+
+
+    /*Contact Us Page */
+    #contactform2 {
+        width: 25%;
+        font-family: 'Montserrat', sans-serif;
+        color: #04516A;
+        padding: 24px;
+        margin-top: 4px;
+        background-color: #7FA2AD;
+        border: 1px solid #04516A;
+
+    }
+    #formp,
+    #formp1 {
+        font-size: 24px;
+        margin: 12px;
+
+    }
+    #form2 {
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+    #iframe {
+        border: none;
+        width: 50%;
+    }
+    #map {
+        width: 55%;
+        margin-bottom: 70px;
+        padding-left: 30px;
+        border: none;
+    }
+}

@@ -20,8 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 
     
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/adjustrating.js"></script>
+    
     
      <script src="extracreditzip.js"></script>
 </head>
@@ -39,41 +38,35 @@
 
     <p id="calltoaction"></p>
 
-    <form>
+    
         <fieldset>
 
             <legend>
-            <label><span> Please Enter Zip Code: </span><input name="zip code" type="number" value="" placeholder="12345" required >
+                <form>
+            <label for="zip"><span> Please Enter Zip Code: </span><input id="zipCode" type="number" value="" placeholder="12345" name="zip" required >
             </label>
+                </form>
             </legend>
            
         </fieldset>
-         <button type="submit" onclick="zipcode()">Submit</button>
-    </form>
-
+         <button onclick="zipcode()">Submit</button>
+        
 
 
 <section id="weatherContainer">
             <div class="weatherCondition">
-                <h2><span id="place"> City, State</span></h2>
-                <p><b>Currently:</b> <span id="weathObs"></span>
-                    
-                    
-                    
-                    <img src=".current_observation.icon_url" alt="currentWeather"  id="weather_icon"></p>
-            </div>
-            <div class="top">
-                <div>
-                    <p> <b>Current Temperature is:</b> <span id="currentTemp"> </span>&deg;f</p>
-                    <p> <b>Current Wind in MPH: </b> <span id="windMPH"></span>mph</p>
+              <h2><span id="city"> City, </span><span id="state">State</span></h2>
+      
                 </div>
-                <div>
-                    <p> <b>Weather Forecast is:</b> <span id="forecast"></span> :</p>
-                    <p><span id="hi"></span></p>
-                    <p> <b>The WindChill Factor is:</b> <span id="windChill"></span>&deg;f</p>
-                </div>
-            </div>
+        
+
+           
         </section>
+           
+                    
+                    
+         
+      
     </main>
         </body>
 </html>

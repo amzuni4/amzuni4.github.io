@@ -1,0 +1,560 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    ;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 100%;
+    padding: 2px;
+}
+
+#logo {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 18pt;
+    left: 220pt;
+    width: 48px;
+    height: 48px;
+}
+
+header {}
+
+header h1 {
+    display: flex;
+    width: 100%;
+    font-family: 'Caveat Brush', cursive;
+    color: #04516A;
+    font-size: 2em;
+    letter-spacing: 3px;
+
+}
+
+
+header img {
+
+    border: none;
+}
+
+header .subheading {
+    display: flex;
+    width: 100%;
+    font-family: 'Montserrat', serif;
+    color: #B86737;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+
+}
+
+nav {
+    background: #fff;
+}
+
+nav button {
+    display: flex;
+    flex-direction: row;
+    margin: .2rem 2%;
+    background-color: #04516A;
+    border: none;
+    font-size: 1.5rem;
+    color: #FFFAF6;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li {
+    text-align: center;
+    border-bottom: 1px solid #E0E6E8;
+    font-size: 18px;
+}
+
+li:first-child {
+    border-top: 1px solid #B87937;
+    ;
+}
+
+li:last-child {
+    border-bottom: 1px solid #B87937;
+}
+
+nav ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #B86737;
+    border-top: 1px solid #B87937;
+}
+
+nav ul li.active a {
+    background-color: #7FA2AD;
+    color: #FFFFFF;
+}
+
+nav ul li a:hover {
+    background-color: #04516A;
+    color: #FFFFFF;
+}
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    font-family: 'Montserrat', serif;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #274262;
+}
+
+main h2,
+h3,
+h2 {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align-last: left;
+    font-size: 1.5em;
+    font-family: 'Caveat Brush', cursive;
+    letter-spacing: 3px;
+    color: #04516A;
+    margin: 15px;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {
+    width: 102%;
+    padding: 2px;
+
+
+
+}
+
+section {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    /* fill the page in the small/phone view */
+    margin: auto;
+    overflow: auto;
+
+}
+
+#biketrail {
+    width: 100%;
+    padding: 9px;
+}
+
+#bikes {
+    width: 100%;
+    padding: 9px;
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    /* fill the page in the small/phone view */
+    margin: auto;
+    overflow: auto;
+
+}
+
+p {
+
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #AA3F00;
+    font-size: 12px;
+}
+
+#sgt,
+#tt,
+#mt {
+    background-color: #7FA2AD;
+    color: #fff;
+    border: 2px solid rgb(200, 200, 200);
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.para {
+
+    padding: 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #AA3F00;
+    background-color: #FFF9F6;
+    font-size: 12px;
+    border: 1px solid #B87937;
+}
+
+footer {
+
+    background-color: #04516A;
+    width: 100%;
+}
+
+footer aside,
+footer p {
+    background-color: #04516A;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 12px;
+
+
+
+
+}
+
+
+#sources, #video{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    
+}
+
+
+/* page 2 table styles */
+
+#header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+    background-color: #7fb9c2;
+    border: 1.8px solid rgb(190, 190, 190);
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 8px;
+    padding-top: 10px;
+
+
+}
+
+th {
+    border: 2px solid rgb(190, 190, 190);
+    text-align: center;
+    letter-spacing: 0px;
+    padding-bottom: 8px;
+    padding-top: 10px
+}
+
+th {
+    color: white;
+    font-weight: bold;
+    background-color: #AA3F00;
+    font-size: 14px;
+    text-align: center;
+}
+
+td {
+    border: 2px solid rgb(190, 190, 190);
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: .5px;
+    color: #AA3F00;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+tr,
+td {
+    background-color: #FFF9F6;
+}
+
+table {
+    margin-top: 55px;
+    margin-bottom: 45px;
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    box-shadow: 5px 5px 7px .8px #628ca6;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+/*Adventure Tours*/
+
+#table1,
+#table2,
+#table3 {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 1px;
+
+}
+
+#avti1,
+#avti2,
+#avti3 {
+    margin-top: 15px;
+    width: 100%;
+    border: 2px solid rgb(200, 200, 200);
+    box-shadow: 5px 5px 7px .8px #628ca6;
+}
+
+#sgt,
+#tt,
+#mt {
+    background-color: #7FA2AD;
+    color: #fff;
+    border: 2px solid rgb(200, 200, 200);
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 2px;
+}
+
+
+/*styles for sales page */
+
+    /*styles for sales page */
+
+
+#mer{
+    margin-bottom: 35px;
+}
+#sales{
+    width: 100%;
+    height: 100%;
+    margin-right: 50px;
+}
+        
+#images{
+    top:1000px;
+}
+
+
+ #carousel ul {
+        list-style: none;
+        width: 2400px;
+        height: 300px;
+        border: none;
+     overflow: hidden;
+
+
+    }
+
+    #carousel ul li {
+
+        width: 600px;
+        height: 300px;
+        border: none;
+    }
+
+    #carousel ul li img {
+        width: 300px;
+        height: 200px;
+        border: none;
+        
+    }
+
+
+
+
+
+/* Events Table */
+
+#eventform{
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    background-color: #FFF9F6;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: white solid 1px;
+    width: 50%;
+
+}
+input{
+    margin-left: 12px;
+}
+
+legend {
+    font-family: 'Caveat Brush', cursive;
+    color: #04516A;
+    font-size: 34px;
+
+}
+
+label {
+    display:flex;
+    margin: .5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #04516A;
+    margin-bottom: 5px;
+}
+
+button{
+    width: 50%;
+      color: #fff;
+    background-color: #AA3F00;
+    border: 2px solid #AA3F00;
+}
+#thanks {
+    font-size: 26px;
+    font-weight: 900;
+
+}
+
+#report {
+    font-size: 14px;
+    color: black;
+}
+
+/*Service Styling*/
+
+#thumbsup {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+
+}
+
+#services {
+    background-color: #7FA2AD;
+    color: #fff;
+    border: 2px solid rgb(200, 200, 200);
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+#contactform2 {
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    color: #04516A;
+    padding: 24px;
+    margin-top: 4px;
+    background-color: #7FA2AD;
+    border: 1px solid #04516A;
+
+}
+
+#formp, #formp1 {
+    font-size: 14px;
+    margin: 12px;
+    margin-bottom: 20px;
+
+}
+
+#form2 {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid rgb(190, 190, 190);
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 18px;
+}
+
+#fullname {
+    color: #fff;
+
+}
+
+#email {
+    color: #fff;
+
+}
+
+#text {
+    color: #fff;
+    border: 1px solid #04516A;
+}
+
+#button {
+    color: #fff;
+    background-color: #256073;
+    border: 2px solid #04516A;
+}
+
+#iframe {
+    border: none;
+    width: 50%;
+}
+
+#map {
+    width: 95%;
+    margin-bottom: 12px;
+    padding-left: 15px;
+    border: none;
+}
+
+
+/*Video Overview Page*/
+
+#vidbutton1 {
+    margin-top: 50px;
+    background-color: #7FA2AD;
+    border:none;
+    margin-bottom: 5px;
+      width: 90px;
+    height:60px;
+} 
+#vidbutton2, #vidbutton3, #vidbutton4{
+    margin-top: 5px;
+    background-color: #7FA2AD;
+    border:none;
+    margin-bottom: 5px;
+    width: 90px;
+    height:60px;
+    
+    
+}
+#video1{
+    margin-bottom: 50px;
+}
+#vidarticle{
+text-align:center;
+}
+
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */

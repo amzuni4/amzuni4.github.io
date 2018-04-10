@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke</title>
+    <meta name="author" content="Amy Zuniga">
+    <meta name="description" content="Fictional Bicycle Touring, Service, and Online Shop">
+    <!-- external style references in the proper cascading order -->
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <script src="scripts/hamburger.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="images/SBC_Logo.png" alt="logo">
+
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading"> Our website informs bicycle enthusiasts of biking tours in the region. The site also serves as a platform for our online bicycle store, and our bicycle maintenance service.</div>
+
+    </header>
+
+
+    <!-- site navigation use placeholder references -->
+    <nav class="clearfix">
+        <button onclick="navToggle()">&#9776;</button>
+        <ul class="hide" id="primaryNav">
+
+            <li><a href="home.html">Home</a></li>
+            <li><a href="adventuretours.html">Adventure Tours</a></li>
+            <li class="active"><a href="events.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <figure>
+            <img src="images/banner.jpg" alt="bikeveiw" sizes="50vw" srcset="images/banner.jpg 200w,
+                                                                                                    images/banner.jpg 500w,
+                                                                                                    images/banner.jpg 800w">
+
+        </figure>
+        <h2>Annual Event Information:</h2>
+
+        <table id="events">
+            <thead>
+                <tr>
+                    <th colspan="4">Cycle the Continental Divide</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dates</td>
+                    <td>Route</td>
+                    <td>Cost</td>
+                    <td>Basic Requirements</td>
+                </tr>
+                <tr>
+                    <td> 2nd &amp; 4th Saturday Starting May-Aug</td>
+                    <td>Mountain Trek, Treasure Trail, Star Gazer's Trove </td>
+                    <td>$68.00</td>
+                    <td>Helmet, Bicycle, Water, First Aid Kit</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <h3 id="calltoaction">Event Registration:</h3>
+        <p> Please Fill Out the Form Below!</p>
+
+        <form id="eventform">
+            <fieldset>
+
+                <legend>
+                    <span>General Information</span> </legend>
+                <label><span>Full Name: </span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z-._ ]{5,99}" required></label>
+                <label><span>Email Address: </span><input name="email" type="email" value="" placeholder="yogi@gmail.com" required ></label>
+                <label><span>Phone Number: </span><input name="phone" type="tel" value="" placeholder="1234567890" pattern="[0-9]{10,20}" required></label>
+                <label><span>Zip Code: </span><input name="zip code" type="number" value="" placeholder="12345" required >
+            </label>
+                <label><span>Date Of Birth: </span><input name="date" type="date" value="" required></label>
+            </fieldset>
+            <fieldset>
+                <legend><span>Select State</span></legend>
+
+                <select name="state">
+             <option value="Select State">Select State</option>
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+   <option value="DE">Delaware</option>
+    <option value="FL">Florida</option>
+    <option value="GA">Georgia</option>
+    <option value="HI">Hawaii</option>
+    <option value="ID">Idaho</option>
+    <option value="IL">Illinois</option>
+    <option value="IN">Indiana</option>
+    <option value="IA">Iowa</option>
+    <option value="KS">Kansas</option>
+    <option value="KY">Kentucky</option>
+    <option value="LA">Louisiana</option>
+    <option value="ME">Maine</option>
+   <option value="MD">Maryland</option>
+    <option value="MA">Massachusetts</option>
+    <option value="MI">Michigan</option>
+    <option value="MN">Minnesota</option>
+    <option value="MS">Mississippi</option>
+    <option value="MO">MT: Montana</option>
+       <option value="CA">Missouri</option>
+    <option value="MT">Montana</option>
+    <option value="NE">Nebraska</option>
+    <option value="NV">Nevada</option>
+    <option value="NH">New Hampshire</option>
+    <option value="NY">New York</option>
+   <option value="NC">North Carolina</option>
+    <option value="ND">North Dakota</option>
+    <option value="OH">Ohio</option>
+    <option value="OK">Oklahoma</option>
+    <option value="OR">Oregon</option>
+    <option value="PA">Pennsylvania</option>
+    <option value="RI">Rhode Island</option>
+    <option value="SC">South Carolina</option>
+    <option value="SD">South Dakota</option>
+    <option value="TN">Tennessee</option>
+    <option value="TX">Texas</option>
+    <option value="UT">Utah</option>
+   <option value="VT">Vermont</option>
+    <option value="VA">Virgina</option>
+    <option value="WA">Washington</option>
+    <option value="WV">West Virgina</option>
+    <option value="WI">Wisconsin</option>
+    <option value="WY">Wyoming</option>
+  </select>
+            </fieldset>
+            <fieldset>
+                <textarea name="message" rows="10" cols="30">Special Accommodations/Comments Here.</textarea>
+                <button type="submit" formaction="thanks.html">Submit</button>
+
+            </fieldset>
+
+        </form>
+    </main>
+    <footer>
+        <aside>
+            3950 Valley Commons Drive Bozeman, MT
+        </aside>
+        <p class="footer-bar">&copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="getDate"></span>| <a href="reference.html" id="sources"> Sources </a>| <a href="video.html" id="video"> Overveiw</a></p>
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/wayfinder.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </footer>
+</body>
+
+</html>

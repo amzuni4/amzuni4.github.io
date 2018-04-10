@@ -1,0 +1,247 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+    header {}
+
+    header h1 {
+        display: inline-block;
+        width: 100%;
+        font-family: 'Caveat Brush', cursive;
+        color: #04516A;
+        font-size: 3em;
+        letter-spacing: 3px;
+
+    }
+
+
+    header img {
+
+        border: none;
+    }
+
+    header .subheading {
+        display: inline-block;
+        width: 100%;
+        font-family: 'Montserrat', serif;
+        color: #B86737;
+        font-size: 18px;
+        padding: 12px;
+        letter-spacing: 1px;
+
+
+    }
+    #logo {
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        left: 310pt;
+        top: 39px;
+        width: 65px;
+        height: 65px;
+    }
+    nav {
+        background: #fff;
+
+    }
+    nav button {
+        display: none;
+    }
+    nav ul.hide {
+        display: flex;
+        display: -ms-flexbox;
+
+    }
+    nav ul {
+
+        list-style-type: none;
+        margin-left: 1px;
+        border-left: none;
+        flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        font-family: 'Montserrat', serif;
+        font-size: 6px;
+    }
+    nav ul li {
+        -ms-flex: 1 0 auto;
+        border-bottom: none
+    }
+    nav ul li a {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px;
+        text-decoration: none;
+        color: #B86737;
+        border: 1.2px solid #B87937;
+    }
+    nav ul li.active a {
+        color: #ffffff;
+    }
+    nav ul li a:hover {
+        color: #FFF;
+    }
+    main h2,
+    h3 {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align-last: left;
+        font-size: 40px;
+        font-family: 'Caveat Brush', cursive;
+        letter-spacing: 3px;
+    }
+    main figure {
+        margin: 0 0 .2rem 2%;
+        width: 96%;
+    }
+
+    main figure img {
+        width: 100%;
+        padding: 2px;
+
+
+
+    }
+
+    section {
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+        /* fill the page in the small/phone view */
+        margin: auto;
+        overflow: auto;
+
+    }
+
+    #biketrail {
+        width: 100%;
+        padding: 18px;
+    }
+
+    #bikes {
+        width: 100%;
+        padding: 18px;
+    }
+    article p.town-article img {
+        /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+        /* fill the page in the small/phone view */
+        margin: auto;
+        overflow: auto;
+
+    }
+
+
+    p {
+
+        margin-bottom: 15px;
+        font-family: 'Montserrat', sans-serif;
+        color: #AA3F00;
+        font-size: 22px;
+    }
+
+    .para {
+
+        padding: 25px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #AA3F00;
+        background-color: #FFF9F6;
+        font-size: 22px;
+        border: 1px solid #B87937;
+    }
+    
+    
+    
+    /*styles for sales page */
+    
+
+
+
+#sales{
+    width: 100%;
+    height: 100%;
+   
+    
+}
+        
+
+
+
+ #carousel ul {
+        list-style: none;
+        width: 2400px;
+        height: 300px;
+        border: none;
+     overflow: hidden;
+
+
+    }
+
+    #carousel ul li {
+
+        width: 600px;
+        height: 300px;
+        border: none;
+    }
+
+    #carousel ul li img {
+        width: 600px;
+        height: 300px;
+        border: none;
+    }
+    
+    
+    
+    
+
+    /*Contact Us Page */
+    
+    #formp, #formp1 {
+        font-size: 20px;
+        margin: 12px;
+
+    }
+    #form2 {
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid rgb(190, 190, 190);
+        font-family: 'Montserrat', sans-serif;
+
+        padding: 18px;
+    }
+
+
+    #contactform2 {
+        width: 300px;
+        font-family: 'Montserrat', sans-serif;
+        color: #04516A;
+        padding: 24px;
+        margin-top: 4px;
+        background-color: #7FA2AD;
+        border: 1px solid #04516A;
+
+    }
+
+
+
+    #iframe {
+        border: none;
+        width: 75%;
+    }
+    #map {
+        width: 95%;
+        margin-bottom: 12px;
+        padding-left: 55px;
+        border: none;
+    }
+
+
+}
+
+/* responsive images */
