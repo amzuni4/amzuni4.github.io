@@ -29,7 +29,7 @@
         ]
 
         // EXTRACT VALUE FOR HTML HEADER. 
-        // ('Book ID', 'Book Name', 'Category' and 'Price')
+      
         var col = [];
         for (var i = 0; i < myTable.length; i++) {
             for (var key in myTable[i]) {

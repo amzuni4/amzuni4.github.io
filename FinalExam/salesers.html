@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Overveiw | The Mountain Spoke</title>
+    <title>Thanks |The Mountain Spoke</title>
     <meta name="author" content="Amy Zuniga">
     <meta name="description" content="Fictional Bicycle Touring, Service, and Online Shop">
     <!-- external style references in the proper cascading order -->
@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <script src="scripts/hamburger.js"></script>
-   
+
 
 </head>
 
@@ -41,8 +41,8 @@
     <nav class="clearfix">
         <button onclick="navToggle()">&#9776;</button>
         <ul class="hide" id="primaryNav">
-          
-            <li ><a href="home.html">Home</a></li>
+
+            <li><a href="home.html">Home</a></li>
             <li><a href="adventuretours.html">Adventure Tours</a></li>
             <li class="active"><a href="events.html">Events</a></li>
             <li><a href="sales.html">Sales</a></li>
@@ -50,31 +50,55 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-<article id="vidarticle"> 
-     <h2>Video Overveiw Presentation</h2>
-  <button onclick="playPause()" id="vidbutton1">Play/Pause</button> 
-  <button onclick="makeBig()" id="vidbutton2">Big</button>
-  <button onclick="makeSmall()" id="vidbutton3">Small</button>
-  <button onclick="makeNormal()" id="vidbutton4">Normal</button>
-  <br><br>
-   
-  <video id="video1" width="420">
-    <source src="mp4/vidoverveiw.mp4" type="video/mp4">
-  </video>
-</article> 
 
- 
+    <main id="sales">
+
+
+
+        <figure>
+            <img src="images/banner.jpg" alt="bikeveiw" sizes="50vw" srcset="images/banner.jpg 200w,
+                                                                                                    images/banner.jpg 500w,
+                                                                                                    images/banner.jpg 800w">
+            <h2>Welcome!</h2>
+
+
+        </figure>
+            <div id="saleses">
+
+        <h2 id="salesh">The Mountain Spoke Online Shop</h2>
+
+        <div class="container">
+
+            <div class="slider-wrapper">
+                <div class="inner-wrapper">
+                    <div class="slide"> <img src="images/sales1.jpg" alt="blackbike"></div>
+                    <div class="slide"> <img src="images/sales2.jpg" alt="bluebike"></div>
+                    <div class="slide"> <img src="images/sales4.jpg" alt="girlbike"></div>
+
+                </div>
+            </div>
+
+            <div class="button prev"></div>
+            <div class="button next"></div>
+
+        </div>
+
+    </div>
+
+
+    </main>
+
     <footer>
         <aside>
-           3950 Valley Commons Drive Bozeman, MT
+            3950 Valley Commons Drive Bozeman, MT
         </aside>
         <p class="footer-bar">&copy; 2018 All Rights Reserved | The Mountain Spoke | <span id="getDate"></span>| <a href="reference.html" id="sources"> Sources </a>| <a href="video.html" id="video"> Overveiw</a></p>
-    
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/wayfinder.js"></script>
-    <script src="scripts/windchill.js"></script>
-</footer>
-<script src="scripts/video.js"></script>
+        <script src="scripts/sales.js"></script>
+
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/wayfinder.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </footer>
 </body>
 
 </html>

@@ -81,8 +81,8 @@
     }
     #logo {
         position: absolute;
-        top: 60pt;
-        left: 410pt;
+        top: 50pt;
+        left: 1225px;
         z-index: 10;
         width: 88px;
         height: 88px;
@@ -197,6 +197,9 @@
         border: 2px solid rgb(200, 200, 200);
         box-shadow: 5px 5px 7px .8px #628ca6;
     }
+    
+    
+    
     /*Service Styling*/
     #services {
         background-color: #7FA2AD;
@@ -212,49 +215,110 @@
 
 
     /*styles for sales page */
-    #images {
-        height: 400px;
+ 
 
+ .salesfooter{
+     margin-top: 150px;
     }
-   
-    #carousel {
-        width: 600px;
-        height: 300px;
+    #salesh{
+        padding:10px;
+        padding-bottom: 20px;
+        
+    }
+    ::-moz-selection {
+        background: transparent;
+    }
+
+    ::selection {
+        background: transparent;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #sliders {
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        height: 94vh;
+        position: relative;
+      
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 1.5em;
+        margin: 30px 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    
+        
+    }
+
+    .slider-wrapper {
+        width: 800px;
+        height: 600px;
+        margin-top: 140px;
+        
         overflow: hidden;
-        margin-top: 35px;
-        margin-left: 550px;
-        border: none;
     }
 
-    #carousel ul {
-        list-style: none;
-        width: 2400px;
-        height: 300px;
-        border: none;
-
+    .inner-wrapper {
+        width: 500%;
+        height: 100%;
+        position: relative;
+        left: -100%;
+        margin: 10px;
 
     }
 
-    #carousel ul li {
-
-        width: 600px;
-        height: 300px;
-        border: none;
+    .slide {
+        width: calc(100% / 5);
+        height: 100%;
+        float: left;
+        font-size: 100px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
     }
 
-    #carousel ul li img {
-        width: 600px;
-        height: 300px;
-        border: none;
+    .slide img {
+        width: 750px;
+    }
+    .button {
+        width: 30px;
+        height: 30px;
+        border-top: 2px solid black;
+        position: absolute;
+        cursor: pointer;
     }
 
-button{
-    width: 25%;
-      color: #fff;
-    background-color: #AA3F00;
-    border: 2px solid #AA3F00;
-}
+    .prev {
+        border-left: 2px solid #04516A;
+        left: 950px;
+        top: 1550px;
+        transform: rotate(-45deg);
+        position: absolute;
+    }
 
+    .next {
+        border-right: 2px solid #04516A;
+        left: 52%;
+        top: 1550px;
+        transform: rotate(45deg);
+        position: absolute;
+    }
+
+   
 
 
     /*Contact Us Page */

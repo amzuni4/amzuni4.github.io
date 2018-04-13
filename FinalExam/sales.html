@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Mountain Spoke</title>
+    <title> Sales |The Mountain Spoke</title>
     <meta name="author" content="Amy Zuniga">
     <meta name="description" content="Fictional Bicycle Touring, Service, and Online Shop">
     <!-- external style references in the proper cascading order -->
@@ -23,7 +23,7 @@
     <script src="scripts/hamburger.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="scripts/sales.js"></script>
+
 
 </head>
 
@@ -51,13 +51,6 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
-
-
-
-
-
-
-
 <main id="sales">
     <h2>Welcome!</h2>
     <figure>
@@ -69,21 +62,30 @@
 
     </figure>
 
-    <div id="mer">
-        <h2> Merchandise:</h2>
-    </div>
-    <div id="images">
-        <div id="carousel">
-            <ul>
+    <div id="saleses">
 
-                <li><img src="images/sales1.jpg" alt="bikeproduct"></li>
-                <li><img src="images/sales2.jpg" alt="bicycleproduct"></li>
-                <li><img src="images/sales4.jpg" alt="speedbike"></li>
-            </ul>
+        <h2 id="salesh">The Mountain Spoke Online Shop</h2>
+
+        <div class="container">
+
+            <div class="slider-wrapper">
+                <div class="inner-wrapper">
+                    <div class="slide"> <img src="images/sales1.jpg" alt="bluebike"></div>
+                    <div class="slide"> <img src="images/sales2.jpg" alt="blackbike"></div>
+                    <div class="slide"> <img src="images/sales4.jpg" alt="girlbike"></div>
+
+                </div>
+            </div>
+
+            <div class="button prev"></div>
+            <div class="button next"></div>
+
         </div>
+
     </div>
 
-    <footer>
+
+    <footer class="salesfooter">
         <aside>
             3950 Valley Commons Drive Bozeman, MT
         </aside>
@@ -93,7 +95,7 @@
         <script src="scripts/wayfinder.js"></script>
         <script src="scripts/windchill.js"></script>
     </footer>
-
+    <script src="scripts/sales.js"></script>
 
 </main>
 

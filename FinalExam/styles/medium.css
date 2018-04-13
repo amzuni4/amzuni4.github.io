@@ -162,39 +162,108 @@
     
 
 
+/*styles for sales page */
 
-#sales{
-    width: 100%;
-    height: 100%;
-   
+
+ .salesfooter{
+     margin-top: 15px;
+    }
+    #salesh{
+        
+        
+    }
+    ::-moz-selection {
+        background: transparent;
+    }
+
+    ::selection {
+        background: transparent;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #sliders {
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        height: 94vh;
+        position: relative;
+      
+    }
+
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
     
-}
+        
+    }
+
+    .slider-wrapper {
+        width: 100%;
+        height: 100%;
+       
+        
+        overflow: hidden;
+    }
+
+    .inner-wrapper {
+        width: 500%;
+        height: 110%;
+        position: relative;
+        left: -100%;
         
 
-
-
- #carousel ul {
-        list-style: none;
-        width: 2400px;
-        height: 300px;
-        border: none;
-     overflow: hidden;
-
-
     }
 
-    #carousel ul li {
-
-        width: 600px;
-        height: 300px;
-        border: none;
+    .slide {
+        width: calc(100% / 5);
+        height: 100%;
+        float: left;
+        font-size: 100px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
     }
 
-    #carousel ul li img {
-        width: 600px;
-        height: 300px;
-        border: none;
+    .slide img {
+        width: 580px;
+       
     }
+    .button {
+        width: 30px;
+        height: 30px;
+        border-top: 2px solid black;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .prev {
+        border-left: 2px solid #04516A;
+        left: 48%;
+        top: 940px;
+        transform: rotate(-45deg);
+        position: absolute;
+    }
+
+    .next {
+        border-right: 2px solid #04516A;
+        left: 52%;
+        top: 940px;
+        transform: rotate(45deg);
+        position: absolute;
+    }
+
+   
+
+
     
     
     
